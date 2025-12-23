@@ -1,1 +1,31 @@
-Hello
+schema_version = 1
+
+[front_matter]
+format = "toml"
+delimiter = "+++"
+required = ["id", "title", "summary", "source", "tags"]
+optional = ["lang"]
+
+[links]
+base_url = "https://developers.facebook.com"
+
+[tags]
+allowed = [
+  "whatsapp-business-platform",
+  "overview",
+  "cloud-api",
+  "business-management-api",
+  "marketing-messages-lite-api",
+  "webhooks",
+  "messaging",
+  "templates",
+  "phone-numbers",
+  "authentication",
+  "security",
+  "rate-limits",
+  "pricing",
+  "analytics",
+  "tools",
+  "testing",
+  "compliance"
+]
