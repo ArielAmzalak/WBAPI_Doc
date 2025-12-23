@@ -1,91 +1,11 @@
-![](https://facebook.com/security/hsts-pixel.gif)
-
-[![](/images/developer/m4d_logo_july_2024.svg)](/?no_redirect=1)
-
-[Documentos](/docs/)[Ferramentas](/tools/)[Suporte](/support/)[Entrar](https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fwhatsapp%2Fmarketing-messages-api-for-whatsapp%2Fchangelog%3Fnav_ref%3Dbiz_unified_f3_login_page_to_dfc&login_options%5B0%5D=FB&login_options%5B1%5D=SSO&app=436761779744620&is_work_accounts=1&config_ref=biz_login_tool_flavor_dfc)
-
-[Documentos](/docs/)[Marketing Messages API for WhatsApp](/docs/whatsapp/marketing-messages-api-for-whatsapp)[Changelog](/docs/whatsapp/marketing-messages-api-for-whatsapp/changelog)
-
-[Marketing Messages API for WhatsApp](/docs/whatsapp/marketing-messages-api-for-whatsapp)
-
-* [Get started](/docs/whatsapp/marketing-messages-api-for-whatsapp/get-started)
-* [Guides](/docs/whatsapp/marketing-messages-api-for-whatsapp/guides)
-* [Features](/docs/whatsapp/marketing-messages-api-for-whatsapp/features)
-* [Onboard business customers](/docs/whatsapp/marketing-messages-api-for-whatsapp/onboard-business-customers)
-* [Pricing](/docs/whatsapp/marketing-messages-api-for-whatsapp/mm-api-pricing)
-* [Support](/docs/whatsapp/marketing-messages-api-for-whatsapp/support)
-* [Changelog](/docs/whatsapp/marketing-messages-api-for-whatsapp/changelog)
-
-Nesta Página
-
-[Changelog](#changelog)
-
-[November 19, 2025](#november-19--2025)
-
-[October 31, 2025](#october-31--2025)
-
-[October 20, 2025](#october-20--2025)
-
-[October 17, 2025](#october-17--2025)
-
-[October 14, 2025](#october-14--2025)
-
-[October 8, 2025](#october-8--2025)
-
-[October 1, 2025](#october-1--2025)
-
-[September 29, 2025](#september-29--2025)
-
-[September 3, 2025](#september-3--2025)
-
-[August 22, 2025](#august-22--2025)
-
-[August 06, 2025](#august-06--2025)
-
-[July 25, 2025](#july-25--2025)
-
-[July 22, 2025](#july-22--2025)
-
-[July 16, 2025](#july-16--2025)
-
-[July 15, 2025](#july-15--2025)
-
-[July 1, 2025](#july-1--2025)
-
-[June 24, 2025](#june-24--2025)
-
-[June 20, 2025](#june-20--2025)
-
-[June 10, 2025](#june-10--2025)
-
-[May 23, 2025](#may-23--2025)
-
-[May 21, 2025](#may-21--2025)
-
-[May 20, 2025](#may-20--2025)
-
-[April 16, 2025](#april-16--2025)
-
-[April 1, 2025](#april-1--2025)
-
-[March 27, 2025](#march-27--2025)
-
-[Dec 1, 2024](#dec-1--2024)
-
-[November 18, 2024](#november-18--2024)
-
-[November 15, 2024](#november-15--2024)
-
-[November 8, 2024](#november-8--2024)
-
-[November 1, 2024](#november-1--2024)
-
-[October 30, 2024](#october-30--2024)
-
-[October 15, 2024](#october-15--2024)
-
-[June 25, 2024](#june-25--2024)
-
++++
+id = "changelog"
+title = "Changelog"
+summary = "Marketing Messages API for WhatsApp (formerly known as Marketing Messages Lite API) is now generally available."
+source = "https://developers.facebook.com/docs/whatsapp/changelog"
+lang = "en"
+tags = ["whatsapp-business-platform"]
++++
 # Changelog
 
 ## November 19, 2025
@@ -146,7 +66,7 @@ Added a [Coexistence onboarding guide to MM Lite](/docs/whatsapp/marketing-messa
 
 *MM Lite API*
 
-* On September 8th, 2025, we're launching a new [“MM Lite ToS signed” webhook](/docs/whatsapp/marketing-messages-lite-api/onboarding#receive-mm-lite-terms-of-service-signed-webhook--preferred-), which will be sent whenever a business signs the MM Lite ToS via any method (e.g. Embedded Signup, or in WhatsApp Manager). The webhook will have a more descriptive name than the existing `AD_ACCOUNT_LINKED` webhook. The older webhook will be deprecated by Jan 1, 2026.
+* On September 8th, 2025, we're launching a new [MM Lite ToS signed webhook](/docs/whatsapp/marketing-messages-lite-api/onboarding#receive-mm-lite-terms-of-service-signed-webhook--preferred-), which will be sent whenever a business signs the MM Lite ToS via any method (e.g. Embedded Signup, or in WhatsApp Manager). The webhook will have a more descriptive name than the existing `AD_ACCOUNT_LINKED` webhook. The older webhook will be deprecated by Jan 1, 2026.
 * [Conversion metrics](/docs/whatsapp/marketing-messages-lite-api/viewing-metrics) will now also be available in WhatsApp Manager UI and via the WhatsApp Business Management API. This means that we're removing the ability to view MM Lite metrics for read-only Ad Accounts in Ads Manager.
 * The `/marketing_messages` endpoint will [accept marketing messages for both MM Lite API and Cloud API](/docs/whatsapp/marketing-messages-lite-api/sending-messages#send-marketing-template-messages).
 
@@ -314,9 +234,9 @@ In addition, a new MM Lite enrolment parameter allows businesses and partners to
 
 *Reduced sync and async latency*
 
-MM Lite team has quickly responded to feedback on “async” or “delivery” latency. This is defined as the time between an API call being received by MM Lite API, and MM Lite API dispatching a “delivered” webhook, assuming a user is online when the message is sent.
+MM Lite team has quickly responded to feedback on async or delivery latency. This is defined as the time between an API call being received by MM Lite API, and MM Lite API dispatching a delivered webhook, assuming a user is online when the message is sent.
 
-MM Lite previously had a p99 “async” delivery time of 12s, vs. p99 of 5s on Cloud API. This time has now been reduced to 9s. No action is required on a business or partner’s part.
+MM Lite previously had a p99 async delivery time of 12s, vs. p99 of 5s on Cloud API. This time has now been reduced to 9s. No action is required on a business or partners part.
 
 ## November 15, 2024
 
@@ -328,10 +248,10 @@ MM Lite is rolling out a new way for partners to guide a business through signin
 
 In parallel with the Embedded Signup flow already available, a partner will also alternatively be able to initiate the following flow:
 
-1. Call an ‘Intent API’ endpoint to indicate a BMID the partner wishes to assist in migrating to MM Lite. (If a BMID contains any OBO WABAs, these must be migrated to ‘shared’ prior to this event).
+1. Call an Intent API endpoint to indicate a BMID the partner wishes to assist in migrating to MM Lite. (If a BMID contains any OBO WABAs, these must be migrated to shared prior to this event).
 2. Admins of that BMID will receive a notification that they have been invited to start sending marketing messages with optimizations via MM Lite. This notification is in Business Manager and via email.
 3. Once accepted, and MM Lite setup and Ad account syncing is complete, a webhook will be triggered to the partner and all subscribers indicating that MM Lite onboarding is complete, and including the linked Ad IDs.
-4. The partner may now call the “send” endpoint of MM Lite on this business’ behalf, and call an API to fetch an updated token with permission to access the business’ Ad account metrics.
+4. The partner may now call the send endpoint of MM Lite on this business behalf, and call an API to fetch an updated token with permission to access the business Ad account metrics.
 
 See API docs for details on this new onboarding flow.
 
@@ -352,23 +272,21 @@ Businesses can now use MM Lite API to measure when marketing messages lead users
 To represent this new conversation type, MM Lite API conversations are available in every surface where reporting is offered:
 
 1. Ads Manager UI [recommended]
-2. Marketing API “Insights API” [recommended]
-3. WhatsApp Manager UI “WABA Insights” page and “Template Insights” page
+2. Marketing API Insights API [recommended]
+3. WhatsApp Manager UI WABA Insights page and Template Insights page
 4. Business Management API
 5. Pricing webhooks
 
 For full details on how to see MM Lite API metrics via API and in pricing webhooks, consult the MM Lite API docs.
 
-* In the Marketing API “Insights API” response, MM Lite events can be return using fields named `marketing_messages_[event]`
-* In the Business Management API “Template Analytics” endpoint, MM Lite events can be returned using the query parameter `MARKETING_MESSAGES_LITE_API`
-* In the Business Management API “Conversation Analytics” endpoints, MM Lite events can be returned using the `product_type` query parameter `MARKETING\_LITE’
+* In the Marketing API Insights API response, MM Lite events can be return using fields named `marketing_messages_[event]`
+* In the Business Management API Template Analytics endpoint, MM Lite events can be returned using the query parameter `MARKETING_MESSAGES_LITE_API`
+* In the Business Management API Conversation Analytics endpoints, MM Lite events can be returned using the `product_type` query parameter `MARKETING\_LITE
 * In message status webhooks, the `conversation:origin:type` and `pricing:category` fields will show as `marketing_lite`
 
-Businesses can now see MM Lite metrics as “Marketing - lite” in the WhatsApp Manager UI:
+Businesses can now see MM Lite metrics as Marketing - lite in the WhatsApp Manager UI:
 
-![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/475969840_997283928986096_7019011551543213590_n.png?_nc_cat=107&ccb=1-7&_nc_sid=e280be&_nc_ohc=-1y1l0_7o70Q7kNvwGbFpTR&_nc_oc=AdmTKfrQNKbF74TnJcf2NP6F7nNWsEM51iH2AHSjMcAbFMR_2zFIQy2CKTqw4KOEoMU&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_Afia3x1bF-aCYHJ_HIVkqN2MwKXUKmcQkd7v23vHJ1sfWA&oe=69405F23)
-
-We recommend you integrate with the Marketing API “Insights API” for MM Lite Metrics, and encourage end businesses to log into Ads Manager UI to see their metrics, instead of using the WhatsApp business surface. Ads Mgr UI and Insights API show conversion metrics that are not available on WhatsApp surfaces, and will continue to support new metrics and features as the primary surface for MM Lite API reporting as the API grows.
+We recommend you integrate with the Marketing API Insights API for MM Lite Metrics, and encourage end businesses to log into Ads Manager UI to see their metrics, instead of using the WhatsApp business surface. Ads Mgr UI and Insights API show conversion metrics that are not available on WhatsApp surfaces, and will continue to support new metrics and features as the primary surface for MM Lite API reporting as the API grows.
 
 API docs for partners have been updated to reflect how to fetch MM Lite metrics via API.
 
@@ -403,124 +321,3 @@ Marketing message conversations initiated via MM Lite API are counted and billed
 *Show MM Lite metrics on the Template Analytics API*
 
 MM Lite metrics are now available from the Template Analytics API endpoint. See documentation for details.
-
-![](https://www.facebook.com/tr?id=675141479195042&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=574561515946252&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=1754628768090156&ev=PageView&noscript=1)
-
-Nesta Página
-
-[Changelog](#changelog)
-
-[November 19, 2025](#november-19--2025)
-
-[October 31, 2025](#october-31--2025)
-
-[October 20, 2025](#october-20--2025)
-
-[October 17, 2025](#october-17--2025)
-
-[October 14, 2025](#october-14--2025)
-
-[October 8, 2025](#october-8--2025)
-
-[October 1, 2025](#october-1--2025)
-
-[September 29, 2025](#september-29--2025)
-
-[September 3, 2025](#september-3--2025)
-
-[August 22, 2025](#august-22--2025)
-
-[August 06, 2025](#august-06--2025)
-
-[July 25, 2025](#july-25--2025)
-
-[July 22, 2025](#july-22--2025)
-
-[July 16, 2025](#july-16--2025)
-
-[July 15, 2025](#july-15--2025)
-
-[July 1, 2025](#july-1--2025)
-
-[June 24, 2025](#june-24--2025)
-
-[June 20, 2025](#june-20--2025)
-
-[June 10, 2025](#june-10--2025)
-
-[May 23, 2025](#may-23--2025)
-
-[May 21, 2025](#may-21--2025)
-
-[May 20, 2025](#may-20--2025)
-
-[April 16, 2025](#april-16--2025)
-
-[April 1, 2025](#april-1--2025)
-
-[March 27, 2025](#march-27--2025)
-
-[Dec 1, 2024](#dec-1--2024)
-
-[November 18, 2024](#november-18--2024)
-
-[November 15, 2024](#november-15--2024)
-
-[November 8, 2024](#november-8--2024)
-
-[November 1, 2024](#november-1--2024)
-
-[October 30, 2024](#october-30--2024)
-
-[October 15, 2024](#october-15--2024)
-
-[June 25, 2024](#june-25--2024)
-
----
-
-![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459257729_1010347667767763_3581566724399163588_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=8mhMcpIjeBkQ7kNvwHkP4-q&_nc_oc=AdlO3ZH_Jvl4nkiSl_NzPx_bZU9wlyyiBqGM7BftG4BZ-zyDTiz3IYeP9jzwyRa3MBM&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_AfhtJpCEuInswxGaXCyGmjWvaWxod5gNwWtPo9P0ingHtQ&oe=6940632C)
-
-* [![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459306853_1501629487899251_7449019458089488547_n.png?_nc_cat=107&ccb=1-7&_nc_sid=e280be&_nc_ohc=G9HoN6clJj0Q7kNvwHW8YOK&_nc_oc=Adl4qqjs2GQ_KCtPcQK5nkyFNKGk2VG_MDKDqJajF6afEsyVXYrgEfPJ8sL7u2Owi3A&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_AfixjUFQZJkOs7UA0M-P85E_H6SuBPliKS88D0-B5gZBUA&oe=694046E2)](https://www.facebook.com/MetaforDevelopers)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/458971466_433154499741175_6962021715663093697_n.png?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=Da_uV3THaUoQ7kNvwF1AAec&_nc_oc=Adms3y4JCEspj3ygUkhiNGbJFZR-oETEUXNTHEA9PBzDGOQ3eeaqgNfhJGrdKa1ekJ8&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_Afi9xIjtWlm95251_z846frwKYwIVL2qqBh9_8v0DiQwQA&oe=6940434E)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT3iCfCjM9BwlgvH2PSDlAix2a9qv6KanKBm4gtD0ZBTi1cIf2hEHc6tYUCZRet4x4z_bS3SMhpMWoUjpWRLxVp0bWBQjY4NMnxoM_gdxQ7D0fdx1osvCGp9JmqpuVaXE1tYMMXRONYx6cpn0fFiWA)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459160202_540178488525397_747089945616031028_n.png?_nc_cat=104&ccb=1-7&_nc_sid=e280be&_nc_ohc=xMk3wRUIgeUQ7kNvwHqMDKx&_nc_oc=Adl6-yLpj-oA8nZLGCMRbDVjAOlD1TSf8Z_sncBFZKdi6sBbLBmhs0PA0e_ZoKfMA6g&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_AfhHvkAKiIKM86IQDltVgZwoBMbCUh49lboz8c02Dfmlsg&oe=69406A98)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT3pC6Wexm7RLd3X1xAuw0FCJzVT4dLcv5s6XH0M9V1GNtF8ha0kc7LdBTxOA2kkDQ0vQjN5GCd7LPux8NQ86eDnR2GctvgKx9it9vVQA9uOFTB6fUcDLlzbh_Q4tmoVkqN2FbGvrUB26ADxr-s5sg)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/458754681_1046279956748647_3773356972584952025_n.png?_nc_cat=103&ccb=1-7&_nc_sid=e280be&_nc_ohc=g67ScHV0LcEQ7kNvwFE9SaD&_nc_oc=Adnm_fQarb-P9HecEp4ZJiFoXCpivyxrjjzjL9w5N3VW0FuM2Xg2me3lqs_ug_ob2Ns&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_AfgHW-rGvo7ZTKHjyZbbqWf3sG2-lSzSbeRvXTZboGu0pw&oe=694048AC)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT2oAtHnvuJCE9jkhsR_UFCxxatQaEOZpWBt1ghS15u66Ws3Evmpx8nFX-_CNDJnn5rD3zLXtdtTVcjPYvpp5U_-qJFffCK5YNNSmpwK34-b_rqQW5CQTHraacYJhZ5ApyQ1EFMWsmwj5NCS7V-LQA)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459342489_501198322668453_7712071717227028092_n.png?_nc_cat=109&ccb=1-7&_nc_sid=e280be&_nc_ohc=PKQzoyB_GWYQ7kNvwHuQ3Qo&_nc_oc=AdlZ6PusCJjK-MqVyMbegbP9cF2-JParHbS_7SO6tVR_zRZ9As7h2c-aarjHrSmHSyM&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_AfjpUDWc0mvua6DOSK3B5IvPuobeYo3qCeNLcJskz-MkVQ&oe=69406E30)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT1rYAIO_7n4RAihGPxNMLF1FuQ1_ecmg6uWXtSTuaIxAaidMqriT5x-adip2X7lQqu9PSfC21JRwvkyx71zm3MXT1TJFxElz2bHYMg0UgxfB3c4xA3Va4ZY11wEfipP0Gc0M73IOY31B97qOSqHfQ)
-
-#### Desenvolva com a Meta
-
-* [IA](https://developers.meta.com/ai/)
-* [Meta Horizon OS](https://developers.meta.com/horizon/)
-* [Tecnologias sociais](/social-technologies/)
-* [Dispositivos vestíveis](https://l.facebook.com/l.php?u=https%3A%2F%2Fdeveloper.meta.com%2Fwearables%2F&h=AT2RpLW4e3nDwg0LQ9W6v5CBdUl0YOHTI5c0AQ0VPfhXsvgF0cntTnoeyyIAzgPupqUxmhzxtELZhLUtnuKc21SThB3S6oJz24Sabxb3nrBPW49GsnWBuX3ZQb9ELnDAuyJhQ0gdnf4x0ImWDklXBw)
-
-#### Notícias
-
-* [Meta for Developers](https://developers.meta.com/blog/)
-* [Blog](/blog/)
-* [Casos de sucesso](/success-stories/)
-
-#### Suporte
-
-* [Suporte ao desenvolvedor](/support/)
-* [Ferramenta de bug](/support/bugs/)
-* [Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT3POC26Pbpoo85iRJISL-3D6mRywFkdz6qfa8RlGWcK61Q05c9GMaw9J_d3J8WtTwVkqNIrfJI1MixQR1R0tBDpDrBUNErLPKAxlyxLx6tCtQbvOiH3bI-XSrIgyahpalaJbvzJrgeUrasopC-Z-w)
-* [Fórum da comunidade de desenvolvedores![](https://static.xx.fbcdn.net/rsrc.php/v4/yE/r/3AaI47RuuWt.png)](https://www.facebook.com/groups/fbdevelopers/)
-* [Relatar um incidente](/incident/report/)
-
-#### Termos e políticas
-
-* [Iniciativas da plataforma responsável](/products/responsible-platform-initiatives/)
-* [Termos da plataforma](/terms/)
-* [Políticas do Desenvolvedor](/devpolicy/)
-
-Siga-nos
-
-* [![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89126182_222315695571651_4936319991919149056_n.svg?_nc_cat=109&ccb=1-7&_nc_sid=e280be&_nc_ohc=jVaAdZR-cusQ7kNvwEcegmJ&_nc_oc=AdmiBraDOmtoE9jJ7N1ARcKhu2zRcVQhE-puYTPRNJUsLeThg-dmKW4EvjEgnWRXg-I&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_AfhjfFCY70ibXNHfcjRIgtsMq-U1NKDEfApK0DCvlyYbfg&oe=694042EF)](https://www.facebook.com/MetaforDevelopers)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89319900_506382610280628_2520212398984396800_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=866JCMN-YaAQ7kNvwGu2k-u&_nc_oc=AdnMSFXUTR6BKYOcgLBvfLhyyP4wTHaIBI7IncOuiCIKefiCT_DMS4-PSL-g0qU_7mg&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_Afi2QnhGw1jHqFJTsuiNIRD9DBRfVa55Ymdl_6ocxUBfzg&oe=69404E75)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT1E0FhXbfogEB0vSDxLqWE-Krj6Wyre6LnCn-o60-4MtXMvRxwbNpsenPse1jbtDygRNqBhdZd_Bw2O2XeScqc_MQbOK-7zbuOBh6e6AV54AvFjXRwlv65FNd88G_t77z4ecMm-dXGSeFq-1nGsXw)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89154638_493934268150363_1123534170136510464_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=lAaTViSW3NMQ7kNvwFiDJyV&_nc_oc=AdkLWyM25HuFV6d_EdW-d15rekQ2Q0oWryVvfbpvP23K-D9qm0gIk6PzRhQiM9M49zY&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_AfjLrQeEkyW74tTF7VsW3JmbN-CrndrGwcanCtbuHv-dfQ&oe=69406085)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT3tOt3gBd9q7soCtojKbsmq7TLGKDp_oDxwAn06yWIzIMVH5lz1vtJv43c_vQOf3T2mm4xc_5fhLssHIeUvVdXFZr5DqJwCpmaWvYfP98QXj7YKIZPrttVhBJSWdv8vG3gWJl8YZjpXOy2XKxmO1g)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89354779_640044533453459_7031092369583767552_n.svg?_nc_cat=108&ccb=1-7&_nc_sid=e280be&_nc_ohc=YUHZv44W0BEQ7kNvwFsVK8a&_nc_oc=Admq0MiSpCD5BDCCMx7O3kdwvKMKzt4EaBIwfdVwAz6xt3mzqaiSvec83zvkwiZtn-k&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_AfjAnjomCWE-MgxVjlQuZCIX7XbBczLdFXGDi6lJQIZkQA&oe=694051C6)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT3aAP8nzJSKNCDGNCAbD77sUullBNDbx902RWdkrCIB_d5GceJEb1Yy2AJrRQLQVntEIQqX1D8T-l7EcNDEcYZIBp1_vkVU2yIg9-MADtlqBknfE2eO-48nUrODfTf8hH7gyuBwSQtXhvSnOJNPXA)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89127358_532616317687233_292625476315250688_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=4eJmFx9fWJ0Q7kNvwET74gM&_nc_oc=Adn0VQn8zlM0qhkzEPsvh53FbUilR4Q1JZVrngx32iPmDOad4dTZI7h1ycnyqRss36A&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=xz4Cc3N8cTMeRVwNu27KUA&oh=00_Afg0VnbLZON3qAl9eIpRGT2p3_hFlyfAEHtRtp3Qqkx89A&oe=694071D4)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT1j3yMwa0M5EMJyB1BBGbZW2PAts6TcQFsd82ghsO9ZpPIh6B2k0hnC3zQoezO-kIQ1Yv_196OXvGqhuxMJUrA_yxELIC_zzJLnNxwRnxqMIeRVg1vwK-4CavkqdOz_RVV_Tiz2yJuLX4V62ZKa_Q)
-
-© 2025 Meta
-
-* [Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT1yU8XJijJdgG2rVf2mZADjbdtihX-edDimJpLpKrO9eU1Ibfp5rYlIaRBdw86APxC54X-2qdJ_wFeSTzNcp-LjJes4JnIcS03r5Otxe5-nvXUAXGxuUW6VhaE7I6mg2MSdwtDA2g5vFOx-etAhAw)
-* [Carreiras](https://www.facebook.com/careers)
-* [Política de Privacidade](https://www.facebook.com/about/privacy)
-* [Cookies](https://www.facebook.com/help/cookies)
-* [Termos](https://www.facebook.com/policies)
-
-Português (Brasil)Bahasa IndonesiaDeutschEnglish (US)EspañolEspañol (España)Français (France)ItalianoTiếng ViệtРусскийالعربيةภาษาไทย한국어中文(香港)中文(台灣)中文(简体)日本語
-
-Português (Brasil)

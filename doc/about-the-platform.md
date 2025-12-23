@@ -1,12 +1,11 @@
 +++
 id = "about-the-platform"
 title = "About the WhatsApp Business Platform"
-summary = "Overview of the WhatsApp Business Platform, its core APIs, key resources, tools, and limits."
-source = "https://developers.facebook.com/docs/whatsapp/overview"
+summary = "The WhatsApp Business Platform enables businesses to communicate with customers at scale."
+source = "https://developers.facebook.com/docs/whatsapp/about-the-platform"
 lang = "en"
-tags = ["whatsapp-business-platform", "overview", "cloud-api", "business-management-api", "marketing-messages-lite-api", "webhooks", "security", "rate-limits"]
+tags = ["whatsapp-business-platform", "overview", "cloud-api", "business-management-api", "marketing-messages-lite-api", "webhooks", "messaging", "templates", "phone-numbers", "authentication", "security", "rate-limits", "tools", "testing", "compliance"]
 +++
-
 # About the WhatsApp Business Platform
 
 The WhatsApp Business Platform enables businesses to communicate with customers at scale.
@@ -33,8 +32,6 @@ WhatsApp messaging provides a powerful and private way to engage with customers.
 - Facilitate end-to-end transactions, from product discovery to payment
 - Enable multi-factor authentication or one-time passwords to verify accounts and users
 - Deliver custom interactive conversational experiences
-
-[Learn more about message types on WhatsApp Cloud API.](/docs/whatsapp/cloud-api/guides/send-messages)
 
 ### Business Management API
 
@@ -67,8 +64,6 @@ The MM Lite API includes:
 - **Automated creative optimizations:** Automatic enhancements to marketing creative to increase message performance.
 - **Performance benchmarks and recommendations:** Comparison of read and click rates versus similar templates from businesses in your region.
 - **Conversion metrics:** Measure marketing messages that lead users to perform app events such as 'Add to Cart', 'Checkout Initiated', or 'Purchase'.
-
-[Learn more about the Marketing Messages Lite API.](/docs/whatsapp/marketing-messages-lite-api/)
 
 ### Webhooks
 
@@ -148,13 +143,9 @@ Business portfolios can be verified, and verification status factors into improv
 
 A WhatsApp Business Account represents your business, storing metadata and linking to phone numbers, templates, and analytics.
 
-[Learn more about WhatsApp Business Accounts.](/docs/whatsapp/overview/business-accounts)
-
 ### Business phone numbers
 
 Business phone numbers, real or virtual, are used for sending and receiving WhatsApp messages. They can have display names and earn Official Business Account status.
-
-[Learn more about business phone numbers.](/docs/whatsapp/cloud-api/phone-numbers)
 
 ### Message templates
 
@@ -163,8 +154,6 @@ Templates are customizable messages that you can construct in advance of sending
 Templates are useful for messaging at scale. They are also the only type of message that can be sent to WhatsApp users outside of a [customer service window](/docs/whatsapp/cloud-api/guides/send-messages/#customer-service-windows).
 
 Templates have quality scores and are subject to various messaging limits.
-
-[Learn more about message templates.](/docs/whatsapp/business-management-api/message-templates)
 
 ### Test resources
 
@@ -210,8 +199,6 @@ The official Postman collection lets you execute common API queries.
 ### Throughput
 
 Business phone numbers can send up to 80 messages per second by default, with capacity upgrades available.
-
-[Learn more about throughput.](/docs/whatsapp/throughput)
 
 ### Encryption
 
@@ -281,8 +268,6 @@ All platform use must comply with WhatsApp's terms and policies. Using unauthori
 - [Learn more about terms and policies.](https://www.whatsapp.com/legal/business-terms/)
 
 ## Next steps
-
-[Get started with the WhatsApp Business Platform.](/docs/whatsapp/cloud-api/get-started)
 
 **Learn more**
 

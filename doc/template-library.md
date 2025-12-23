@@ -1,98 +1,14 @@
-![](https://facebook.com/security/hsts-pixel.gif)
-
-[![](/images/developer/m4d_logo_july_2024.svg)](/?no_redirect=1)
-
-[Documentos](/docs/)[Ferramentas](/tools/)[Suporte](/support/)[Entrar](https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fwhatsapp%2Fcloud-api%2Fguides%2Fsend-message-templates%2Ftemplate-library%3Fnav_ref%3Dbiz_unified_f3_login_page_to_dfc&login_options%5B0%5D=FB&login_options%5B1%5D=SSO&app=436761779744620&is_work_accounts=1&config_ref=biz_login_tool_flavor_dfc)
-
-[Documentos](/docs/)[API de Nuvem do WhatsApp](/docs/whatsapp/cloud-api)[Modelos](/docs/whatsapp/business-management-api/message-templates)[Library](/docs/whatsapp/cloud-api/guides/send-message-templates/template-library)
-
-[API de Nuvem do WhatsApp](/docs/whatsapp/cloud-api)
-
-* [Visão geral](/docs/whatsapp/cloud-api/overview)
-* [Começar](/docs/whatsapp/cloud-api/get-started)
-* [Mensagem](/docs/whatsapp/cloud-api/guides/send-messages)
-* [Modelos](/docs/whatsapp/business-management-api/message-templates)
-
-  + [Modelos de autenticação](/docs/whatsapp/business-management-api/authentication-templates)
-  + [Marketing templates](/docs/whatsapp/business-management-api/message-templates/marketing-templates)
-  + [Utility templates](/docs/whatsapp/business-management-api/message-templates/utility-templates)
-  + [Componentes](/docs/whatsapp/business-management-api/message-templates/components)
-  + [Management](/docs/whatsapp/business-management-api/message-templates/template-management)
-  + [Quality](/docs/whatsapp/business-management-api/message-templates/template-quality)
-  + [Per-user marketing limits](/docs/whatsapp/business-management-api/message-templates/template-messaging-limits)
-  + [Pacing](/docs/whatsapp/business-management-api/message-templates/template-pacing)
-  + [Pausing](/docs/whatsapp/business-management-api/message-templates/template-pausing)
-  + [Review](/docs/whatsapp/business-management-api/template-review)
-  + [Languages](/docs/whatsapp/business-management-api/message-templates/supported-languages)
-  + [Library](/docs/whatsapp/cloud-api/guides/send-message-templates/template-library)
-  + [Comparison](/docs/whatsapp/business-management-api/message-templates/template-comparison)
-  + [Migração de modelo](/docs/whatsapp/business-management-api/message-templates/template-migration)
-  + [Groups](/docs/whatsapp/business-management-api/message-templates/template-groups)
-  + [Tap target title URL override](/docs/whatsapp/cloud-api/guides/send-message-templates/tap-target-url-title-override)
-  + [Time-to-live](/docs/whatsapp/business-management-api/time-to-live)
-* [Webhooks](/docs/whatsapp/cloud-api/guides/set-up-webhooks)
-* [Calling](/docs/whatsapp/cloud-api/calling)
-* [Grupos](/docs/whatsapp/cloud-api/groups)
-* [Bloquear usuários](/docs/whatsapp/cloud-api/block-users)
-* [Números de telefone](/docs/whatsapp/cloud-api/phone-numbers)
-* [Vender produtos e serviços](/docs/whatsapp/cloud-api/guides/sell-products-and-services)
-* [Payments API - India](/docs/whatsapp/cloud-api/payments-api/payments-in)
-* [API de Pagamentos – Brasil](/docs/whatsapp/cloud-api/payments-api/payments-br)
-* [Referência da API](/docs/whatsapp/cloud-api/reference)
-* [Webhooks reference](/docs/whatsapp/webhooks/reference)
-* [Suporte](/docs/whatsapp/cloud-api/support)
-
-Nesta Página
-
-[Template Library](#template-library)
-
-[Creating Templates via WhatsApp Manager (WAM)](#creating-templates-via-whatsapp-manager--wam-)
-
-[Template Parameters and Restrictions](#template-parameters-and-restrictions)
-
-[List of parameters and sample values](#list-of-parameters-and-sample-values)
-
-[Forms](#forms)
-
-[Identifying forms in the request response](#identifying-forms-in-the-request-response)
-
-[Using the API](#using-the-api)
-
-[Searching and Filtering Available Templates](#searching-and-filtering-available-templates)
-
-[Request Syntax](#request-syntax)
-
-[Query String Parameters](#query-string-parameters)
-
-[Example Request](#example-request)
-
-[Example Response](#example-response)
-
-[Template Filters](#template-filters)
-
-[Creating Templates](#creating-templates)
-
-[Request Syntax](#request-syntax-2)
-
-[Post Body](#post-body)
-
-[Body Properties](#body-properties)
-
-[Library template button inputs](#library-template-button-inputs)
-
-[Library template body inputs](#library-template-body-inputs)
-
-[Example Request](#example-request-2)
-
-[Example Response](#example-response-2)
-
-[Sending Template Messages](#sending-template-messages)
-
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=595945097590761&version=1760739785)[Plataforma do WhatsApp Business](https://developers.facebook.com/docs/whatsapp)
-
++++
+id = "template-library"
+title = "Template Library"
+summary = "Template Library makes it faster and easier for businesses to create utility templates for common use cases, like payment reminders, delivery updates and authentication templates for common identit..."
+source = "https://developers.facebook.com/docs/whatsapp/template-library"
+lang = "en"
+tags = ["whatsapp-business-platform", "messaging", "templates"]
++++
 # Template Library
 
-Template Library makes it faster and easier for businesses to create utility templates for common use cases, like payment reminders, delivery updates — and authentication templates for common identity verification use cases.
+Template Library makes it faster and easier for businesses to create utility templates for common use cases, like payment reminders, delivery updates  and authentication templates for common identity verification use cases.
 
 These pre-written templates have already been categorized as utility or authentication. Library templates contain fixed content that cannot be edited and parameters you can adapt for business or user-specific information.
 
@@ -104,29 +20,19 @@ Follow the instructions below to create templates using the Template Library in 
 
 1: In the sidebar of WAM, under **Message Templates**, select **Create Template**.
 
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=371214112495781&version=1761690727)
-
 2: Under *Browse the WhatsApp Template Library*, select **Browse Templates**.
-
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=368267376124994&version=1761690727)
 
 3: You will now see all currently available templates. Use the search bar to search by topic or use case, or use the dropdown options on the sidebar to filter the results.
 
 Note that hovering over a template will show you its parameter values.
 
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=381518724838876&version=1761690727)
-
 4: To create a template, **select one** by clicking on it. Then, add your template name, select the language, and fill out the button details. Once you have completed these steps, click **Submit**.
 
 Note: If you choose **Customize template**, your template will have to go through review before you are able to send messages.
 
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=1089920622248152&version=1761690727)
-
 ## Template Parameters and Restrictions
 
 When a template contains the value `library_template_name` in the `GET <WABAID>/message_templates?name=<TEMPLATE_NAME>` response, it is a template created from the Template Library and is subject to type checks and restrictions.
-
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=964434862349060&version=1761690727)![](https://lookaside.fbsbx.com/elementpath/media/?media_id=1206047537061669&version=1761690727)
 
 Templates in the library contain both fixed content and parameters. The parameters represent spaces in the template where variable information can be inserted, such as names, addresses, and phone numbers.
 
@@ -142,7 +48,7 @@ All parameters are length restricted. If you receive an error, try again with a 
 | --- | --- | --- |
 | `ADDRESS` | A location address.   * Must be a valid address | * `1 Hacker Way, Menlo Park, CA 94025` |
 | `TEXT` | Basic text. | * `regarding your order.` * `12 pack of paper towels` * `your request` * `purchase` * `Jasper's Market` |
-| `AMOUNT` | A number signifying a quantity.   * May contain a prefix or suffix for monetary values such as USD or RS * May contain decimals (.) and commas (,) * May contain valid currency symbols such as $ and € | * `145` * `USD $375.32` * `€1,376.22 EUR` * `RS 1200` |
+| `AMOUNT` | A number signifying a quantity.   * May contain a prefix or suffix for monetary values such as USD or RS * May contain decimals (.) and commas (,) * May contain valid currency symbols such as $ and  | * `145` * `USD $375.32` * `1,376.22 EUR` * `RS 1200` |
 | `DATE` | A standard calendar date. | * `2021-04-19` * `13/03/2021` * `5th January 1982` * `08.22.1991` * `January 1st, 2024` * `05 12 2022` |
 | `PHONE NUMBER` | A telephone number.   * May contain numbers, spaces, dashes (-), parentheses, and plus symbols (+) | * `+1 4256789900` * `+91-7884-789122` * `+39 87 62232` |
 | `EMAIL` | A standard email address.   * Must be a valid email address | * `1hackerway@meta.com` * `yourcustomername@gmail.com` * `abusinessorcustomername@hotmail.com` |
@@ -151,8 +57,6 @@ All parameters are length restricted. If you receive an error, try again with a 
 ## Forms
 
 Forms are only available to accounts who have had their message limits increased.
-
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=3465773146976651&version=1761690727)
 
 Some templates in Template Library are interactive forms that are powered by WhatsApp Flows.
 
@@ -327,7 +231,7 @@ POST /<WHATSAPP_BUSINESS_ACCOUNT_ID>/message_templates
   "name": "<NAME>",
   "category": "UTILITY",
   "language": "en_US",
-  “library_template_name”: “<LIBRARY_TEMPLATE_NAME>”,
+  library_template_name: <LIBRARY_TEMPLATE_NAME>,
   "library_template_button_inputs": "[
     {'type': 'URL', 'url': {'base_url' : 'https://www.example.com/{{1}}',
     'url_suffix_example' : 'https://www.example.com/demo'}},
@@ -344,7 +248,7 @@ POST /<WHATSAPP_BUSINESS_ACCOUNT_ID>/message_templates
 | `<CATEGORY>`  *Enum* | **Required.**   The template category.   **Must be `UTILITY` for use with Template Library.** | `UTILITY` |
 | `<LANGUAGE>`  *Enum* | **Required.**   The template language locale code.   See [Supported Languages](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/supported-languages) | `en_US` |
 | `<LIBRARY_TEMPLATE_NAME>`  *String* | **Required.**   The exact name of the Template Library template. | `delivery_update_1` |
-| `<LIBRARY_TEMPLATE_BUTTON_INPUTS>`  *Array of objects* | **Optional.**   The website and/or phone number of the business being used in the template.   **Note: For utility templates that have button inputs, this property is *not* optional.** | `“[ {'type': 'URL', 'url': {'base_url' : 'https://www.example.com/{{1}}', 'url_suffix_example' : 'https://www.example.com/demo'}}, {type: 'PHONE_NUMBER', 'phone_number': '+16315551010'} ]"` |
+| `<LIBRARY_TEMPLATE_BUTTON_INPUTS>`  *Array of objects* | **Optional.**   The website and/or phone number of the business being used in the template.   **Note: For utility templates that have button inputs, this property is *not* optional.** | `[ {'type': 'URL', 'url': {'base_url' : 'https://www.example.com/{{1}}', 'url_suffix_example' : 'https://www.example.com/demo'}}, {type: 'PHONE_NUMBER', 'phone_number': '+16315551010'} ]"` |
 
 ### Library template button inputs
 
@@ -381,7 +285,7 @@ curl 'https://graph.facebook.com/v19.0/102290129340398/message_templates'
   "name": "my_delivery_update",
   "language": "en_US",
   "category": "UTILITY",
-  “library_template_name”: “delivery_update_1”,
+  library_template_name: delivery_update_1,
   "library_template_button_inputs": "[
     {'type': 'URL', 'url': {'base_url' : 'https://www.example.com/{{1}}',
     'url_suffix_example' : 'https://www.example.com/order_update}}
@@ -402,227 +306,3 @@ curl 'https://graph.facebook.com/v19.0/102290129340398/message_templates'
 ## Sending Template Messages
 
 To learn how to send templated messages, view the [Send Templates guide](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-message-templates)
-
-![](https://www.facebook.com/tr?id=675141479195042&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=574561515946252&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=1754628768090156&ev=PageView&noscript=1)
-
-Nesta Página
-
-[Template Library](#template-library)
-
-[Creating Templates via WhatsApp Manager (WAM)](#creating-templates-via-whatsapp-manager--wam-)
-
-[Template Parameters and Restrictions](#template-parameters-and-restrictions)
-
-[List of parameters and sample values](#list-of-parameters-and-sample-values)
-
-[Forms](#forms)
-
-[Identifying forms in the request response](#identifying-forms-in-the-request-response)
-
-[Using the API](#using-the-api)
-
-[Searching and Filtering Available Templates](#searching-and-filtering-available-templates)
-
-[Request Syntax](#request-syntax)
-
-[Query String Parameters](#query-string-parameters)
-
-[Example Request](#example-request)
-
-[Example Response](#example-response)
-
-[Template Filters](#template-filters)
-
-[Creating Templates](#creating-templates)
-
-[Request Syntax](#request-syntax-2)
-
-[Post Body](#post-body)
-
-[Body Properties](#body-properties)
-
-[Library template button inputs](#library-template-button-inputs)
-
-[Library template body inputs](#library-template-body-inputs)
-
-[Example Request](#example-request-2)
-
-[Example Response](#example-response-2)
-
-[Sending Template Messages](#sending-template-messages)
-
----
-
-![Meta](https://static.xx.fbcdn.net/rsrc.php/y9/r/tL_v571NdZ0.svg)
-
-[![Facebook](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/425860105_925920989121941_6933048753023841367_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=TlXg3Yp0zhcQ7kNvwFlHuzj&_nc_oc=Adlth0zZy4oztItVbjww3S27F1gAAHaCOth97fGPhPKdhDYKwlVT8tmCq8SSN8prXs0&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=Y2bsZA7bKTU6E2USG3vqAg&oh=00_Afih5e_GTfz0XEdDlD3u0_34mV_PTvgbeAMvt9U4bnLANA&oe=692BF1E2)](https://www.facebook.com/MetaforDevelopers)[![Instagram](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/425804778_757649995874129_6917476492193301523_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=9toEBb-pE2cQ7kNvwFNJCB6&_nc_oc=AdlHaJJqU9SjSKjxpIT908b6J1OETLKHPmwa6pzYH463NCg13I4b2rCvxBAcolz_Vhk&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=Y2bsZA7bKTU6E2USG3vqAg&oh=00_AfgkellArvFYvzS9vJtwJbDVAAyRJZyzfh4bfaf8fXZsNg&oe=692BDBF8)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)[![X](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/426747931_385023204117867_5811151062540225287_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=LrCKBfrXotkQ7kNvwHXJ9-R&_nc_oc=AdmWcwXydGH4fE6_ze9n1TULXTqneYU3K5ygGtaVzyBRBnyw7qb8Og3cZksVt5ToizM&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=Y2bsZA7bKTU6E2USG3vqAg&oh=00_AfgOA8Az8Ne9EEwLsaJZuQSjLYs-unhpeOoVGJL0U3ofaA&oe=692BFA6A)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)[![LinkedIn](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/467689750_1684384502343829_7561568713040200172_n.svg?_nc_cat=103&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=rvzDMDq8OpYQ7kNvwFpZJjN&_nc_oc=AdlO0K6valAr8yBXuSJtO6iJS0r0g9RzlDBTkzXUhIADbGXGnHLCUefEiPT_tUXMtrY&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=Y2bsZA7bKTU6E2USG3vqAg&oh=00_AfjIwVv84k7Rg6VtDC9ElnFrk0nup77I_9ZMmGHJk8JR1Q&oe=692C09FE)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)[![YouTube](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/425519002_724756916408357_7491658959807896355_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=cSxQkBtFWXEQ7kNvwHMlhmF&_nc_oc=Adnl0siywGpWBIefbDUneekkB0PXKN416o7GLrNM6CqMMpaf5WBi3HQd8koViWw8GpI&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=Y2bsZA7bKTU6E2USG3vqAg&oh=00_AfjlcdgoWV34Rq8UicxDkSjJcxU7pTD4b2hFE28XMfj2AA&oe=692BF51F)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w) [Tecnologias sociais](/social-technologies/)
-
----
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)[Blog](/blog/)[Casos de sucesso](/success-stories/)
-
----
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)[Ferramenta de bug](/support/bugs/)[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)[Relatar um incidente](/incident/report/)
-
----
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)[Termos da plataforma](/terms/dfc_platform_terms/)[Políticas do Desenvolvedor](/devpolicy/)[Política de Privacidade](https://www.facebook.com/about/privacy)[Cookies](https://www.facebook.com/help/cookies)
-
----
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)[Carreiras](https://www.facebook.com/careers)
-
----
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Tecnologias sociais](/social-technologies/)
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Blog](/blog/)
-
-[Casos de sucesso](/success-stories/)
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)
-
-[Ferramenta de bug](/support/bugs/)
-
-[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
-
-[Relatar um incidente](/incident/report/)
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Carreiras](https://www.facebook.com/careers)
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
-
-[Termos da plataforma](/terms/dfc_platform_terms/)
-
-[Políticas do Desenvolvedor](/devpolicy/)
-
-[Política de Privacidade](https://www.facebook.com/about/privacy)
-
-[Cookies](https://www.facebook.com/help/cookies)
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Tecnologias sociais](/social-technologies/)
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Blog](/blog/)
-
-[Casos de sucesso](/success-stories/)
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)
-
-[Ferramenta de bug](/support/bugs/)
-
-[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
-
-[Relatar um incidente](/incident/report/)
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Carreiras](https://www.facebook.com/careers)
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
-
-[Termos da plataforma](/terms/dfc_platform_terms/)
-
-[Políticas do Desenvolvedor](/devpolicy/)
-
-[Política de Privacidade](https://www.facebook.com/about/privacy)
-
-[Cookies](https://www.facebook.com/help/cookies)
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Tecnologias sociais](/social-technologies/)
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Blog](/blog/)
-
-[Casos de sucesso](/success-stories/)
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)
-
-[Ferramenta de bug](/support/bugs/)
-
-[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
-
-[Relatar um incidente](/incident/report/)
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT1nhu4TGJcRcp8hQX5nnjJIZxIGRFWlCBmXft5nhPFN5qKyNAnA3upM4_pJxRlWwAzvyDXoOaEXBcYtM5U1rxbUAYVBJ4XoWxqaXxEhbLTZZ1XdmEnKn7H5fvPngu0x45HRyI7RYwAf1rfBmVvh2w)
-
-[Carreiras](https://www.facebook.com/careers)
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
-
-[Termos da plataforma](/terms/dfc_platform_terms/)
-
-[Políticas do Desenvolvedor](/devpolicy/)
-
-[Política de Privacidade](https://www.facebook.com/about/privacy)
-
-[Cookies](https://www.facebook.com/help/cookies)
-
-Português (Brasil)

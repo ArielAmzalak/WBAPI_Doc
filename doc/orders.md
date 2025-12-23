@@ -1,66 +1,17 @@
-![](https://facebook.com/security/hsts-pixel.gif)
-
-[![](/images/developer/m4d_logo_july_2024.svg)](/?no_redirect=1)
-
-[Documentos](/docs/)[Ferramentas](/tools/)[Suporte](/support/)[Entrar](https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fwhatsapp%2Fcloud-api%2Fpayments-api%2Fpayments-br%2Forders%3Fnav_ref%3Dbiz_unified_f3_login_page_to_dfc&login_options%5B0%5D=FB&login_options%5B1%5D=SSO&app=436761779744620&is_work_accounts=1&config_ref=biz_login_tool_flavor_dfc)
-
-[Documentos](/docs/)[API de Nuvem do WhatsApp](/docs/whatsapp/cloud-api)[API de Pagamentos – Brasil](/docs/whatsapp/cloud-api/payments-api/payments-br)[Orders](/docs/whatsapp/cloud-api/payments-api/payments-br/orders)
-
-[API de Nuvem do WhatsApp](/docs/whatsapp/cloud-api)
-
-* [Visão geral](/docs/whatsapp/cloud-api/overview)
-* [Começar](/docs/whatsapp/cloud-api/get-started)
-* [Mensagem](/docs/whatsapp/cloud-api/guides/send-messages)
-* [Modelos](/docs/whatsapp/business-management-api/message-templates)
-* [Webhooks](/docs/whatsapp/cloud-api/guides/set-up-webhooks)
-* [Calling](/docs/whatsapp/cloud-api/calling)
-* [Grupos](/docs/whatsapp/cloud-api/groups)
-* [Bloquear usuários](/docs/whatsapp/cloud-api/block-users)
-* [Números de telefone](/docs/whatsapp/cloud-api/phone-numbers)
-* [Vender produtos e serviços](/docs/whatsapp/cloud-api/guides/sell-products-and-services)
-* [Payments API - India](/docs/whatsapp/cloud-api/payments-api/payments-in)
-* [API de Pagamentos – Brasil](/docs/whatsapp/cloud-api/payments-api/payments-br)
-
-  + [Orders](/docs/whatsapp/cloud-api/payments-api/payments-br/orders)
-  + [Pix](/docs/whatsapp/cloud-api/payments-api/payments-br/offsite-pix)
-  + [Payment Links](/docs/whatsapp/cloud-api/payments-api/payments-br/payment-links)
-  + [Boleto](/docs/whatsapp/cloud-api/payments-api/payments-br/boleto)
-  + [One Click Payments](/docs/whatsapp/cloud-api/payments-api/payments-br/one-click-payments)
-  + [Order Details Template](/docs/whatsapp/cloud-api/payments-api/payments-br/orderdetailstemplate)
-* [Referência da API](/docs/whatsapp/cloud-api/reference)
-* [Webhooks reference](/docs/whatsapp/webhooks/reference)
-* [Suporte](/docs/whatsapp/cloud-api/support)
-
-Nesta Página
-
-[Orders](#orders)
-
-[Sending order messages](#sending-order-messages)
-
-[Order details example](#order-details-example)
-
-[Order status example](#order-status-example)
-
-[Message response](#message-response)
-
-[Full API Reference](#full-api-reference)
-
-[Order Details](#order-details)
-
-[Order Status](#order-status)
-
-[Errors and Statuses](#errors-and-statuses)
-
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=595945097590761&version=1760739785)[Plataforma do WhatsApp Business](https://developers.facebook.com/docs/whatsapp)
-
++++
+id = "orders"
+title = "Orders"
+summary = "Payments API introduces two new types of interactive messages: orderdetails and orderstatus. They are the entrypoint to collect payment in WhatsApp."
+source = "https://developers.facebook.com/docs/whatsapp/orders"
+lang = "en"
+tags = ["whatsapp-business-platform", "messaging"]
++++
 # Orders
 
 Payments API introduces two new types of [interactive messages](/docs/whatsapp/cloud-api/guides/send-messages#interactive-messages): `order_details` and `order_status`. They are the entrypoint to collect payment in WhatsApp.
 
 1. `order_details` messages are sent to create an order in the buyer's WhatsApp client app. This message includes a list of the items being purchased, any fees being charged, and the payment settings used to collect payment. The payment settings will vary depending on the integration type ([Pix](/docs/whatsapp/cloud-api/payments-api/payments-br/offsite-pix), [payment links](/docs/whatsapp/cloud-api/payments-api/payments-br/payment-links), [Boleto](/docs/whatsapp/cloud-api/payments-api/payments-br/boleto)).
 2. `order_status` messages are sent when businesses update the order status either based on the WhatsApp payment status change notification or based on their internal processes.
-
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=634034961253028&version=1763148365)
 
 Orders start in `pending` status. When the merchant has fully fulfilled the order and the buyer should not expect any further updates, it must be marked as `completed`.
 
@@ -259,7 +210,7 @@ To send an order\_details message, businesses must assemble an interactive objec
 | **Field Name** | **Optional?** | **Type** | **Description** |
 | --- | --- | --- | --- |
 | retailer\_id | Required | String | Content ID for an item in the order from your catalog. |
-| name | Required | String | The item’s name to be displayed to the user. Cannot exceed 60 characters. |
+| name | Required | String | The items name to be displayed to the user. Cannot exceed 60 characters. |
 | amount | Required | Amount Object | The price per item. See [Amount Object](#amountobject). |
 | quantity | Required | Integer | Number of items in this order. |
 | sale\_amount | Optional | Amount Object | The discounted price per item. This should be less than the original amount. If included, this field is used to calculate the subtotal amount. See [Amount Object](#amountobject). |
@@ -365,201 +316,3 @@ These are the relevant errors for the WhatsApp Payments API:
 | `2047 - Order cancellation failure` | The order could not be cancelled |
 
 For a comprehensive list with detailed descriptions of error codes and HTTP status codes, please refer to these our [Error Codes](/docs/whatsapp/cloud-api/support/error-codes) document.
-
-![](https://www.facebook.com/tr?id=675141479195042&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=574561515946252&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=1754628768090156&ev=PageView&noscript=1)
-
-Nesta Página
-
-[Orders](#orders)
-
-[Sending order messages](#sending-order-messages)
-
-[Order details example](#order-details-example)
-
-[Order status example](#order-status-example)
-
-[Message response](#message-response)
-
-[Full API Reference](#full-api-reference)
-
-[Order Details](#order-details)
-
-[Order Status](#order-status)
-
-[Errors and Statuses](#errors-and-statuses)
-
----
-
-![Meta](https://static.xx.fbcdn.net/rsrc.php/y9/r/tL_v571NdZ0.svg)
-
-[![Facebook](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/425860105_925920989121941_6933048753023841367_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=TlXg3Yp0zhcQ7kNvwELHXUv&_nc_oc=AdnQSB3tXDEx8Zr27rvr5QhJRbPbKlPwYPo_tbTKIkeX-Y0pKKpki9XMw22z-_siQGQ&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=ewqf8Bf0tnvqV6EeECFWwA&oh=00_AfiyupasVGspQzWZzTo9wFQ01BoJFZfZdEeaNGeL12_4Tg&oe=692BF1E2)](https://www.facebook.com/MetaforDevelopers)[![Instagram](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/425804778_757649995874129_6917476492193301523_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=9toEBb-pE2cQ7kNvwF1UM9E&_nc_oc=AdkIeTlaAdZP8jsEm7TarADX4yXJ2nMwI1valKegli_3z4L3HlL4VZ3RsrtpmkSUWVg&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=ewqf8Bf0tnvqV6EeECFWwA&oh=00_AfjiHAOv8cB_JBiKA_zODzOf3y9r9jxtibt4O9kW2Htn3g&oe=692C1438)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)[![X](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/426747931_385023204117867_5811151062540225287_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=LrCKBfrXotkQ7kNvwGpCypP&_nc_oc=AdkflfsSSVx72lQ6-UyuXx6Qnr77-cDFaB0_m2zfILiP_og0p2VNmXuaX7Td9uggUsY&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=ewqf8Bf0tnvqV6EeECFWwA&oh=00_AfhXWKxAc3o6eD2rzu4Zl4r2X1cnrNOK0gStfywSbSYswg&oe=692BFA6A)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)[![LinkedIn](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/467689750_1684384502343829_7561568713040200172_n.svg?_nc_cat=103&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=rvzDMDq8OpYQ7kNvwEpc-zG&_nc_oc=AdmBZBgX0wX64r_0deWkrNm0sh9oMGn2h-E1bHAnRusY0nl5FN2qWlqDpq1gWJ2bmuI&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=ewqf8Bf0tnvqV6EeECFWwA&oh=00_AfhVmsH3g7SBi1QxMDD9nhCjlOAUTrdelNrWYWUeXnh70w&oe=692C09FE)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)[![YouTube](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/425519002_724756916408357_7491658959807896355_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=cSxQkBtFWXEQ7kNvwE4Ii11&_nc_oc=AdnaWdINQtK4QhGsGOwxbDkvd1TBd-VU9ErozOA3kMc6JnZdI5GmNG-_Pp7ra015wfc&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=ewqf8Bf0tnvqV6EeECFWwA&oh=00_Afho2-jSNXlg1lPtaZy71LEctoQvuk7TUm0tFDdXil5Fyw&oe=692BF51F)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg) [Tecnologias sociais](/social-technologies/)
-
----
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)[Blog](/blog/)[Casos de sucesso](/success-stories/)
-
----
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)[Ferramenta de bug](/support/bugs/)[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)[Relatar um incidente](/incident/report/)
-
----
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)[Termos da plataforma](/terms/dfc_platform_terms/)[Políticas do Desenvolvedor](/devpolicy/)[Política de Privacidade](https://www.facebook.com/about/privacy)[Cookies](https://www.facebook.com/help/cookies)
-
----
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)[Carreiras](https://www.facebook.com/careers)
-
----
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Tecnologias sociais](/social-technologies/)
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Blog](/blog/)
-
-[Casos de sucesso](/success-stories/)
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)
-
-[Ferramenta de bug](/support/bugs/)
-
-[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
-
-[Relatar um incidente](/incident/report/)
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Carreiras](https://www.facebook.com/careers)
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
-
-[Termos da plataforma](/terms/dfc_platform_terms/)
-
-[Políticas do Desenvolvedor](/devpolicy/)
-
-[Política de Privacidade](https://www.facebook.com/about/privacy)
-
-[Cookies](https://www.facebook.com/help/cookies)
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Tecnologias sociais](/social-technologies/)
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Blog](/blog/)
-
-[Casos de sucesso](/success-stories/)
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)
-
-[Ferramenta de bug](/support/bugs/)
-
-[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
-
-[Relatar um incidente](/incident/report/)
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Carreiras](https://www.facebook.com/careers)
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
-
-[Termos da plataforma](/terms/dfc_platform_terms/)
-
-[Políticas do Desenvolvedor](/devpolicy/)
-
-[Política de Privacidade](https://www.facebook.com/about/privacy)
-
-[Cookies](https://www.facebook.com/help/cookies)
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Tecnologias sociais](/social-technologies/)
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Blog](/blog/)
-
-[Casos de sucesso](/success-stories/)
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)
-
-[Ferramenta de bug](/support/bugs/)
-
-[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
-
-[Relatar um incidente](/incident/report/)
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT0tOh6sKs8G-NkQtTgFPluxcv70ytDYRVGNufXMRiZlSqFzGbJpI4wn1ucUnqPW43sW1Uxr88rVODhKuUOM8nm8mBjJtCAzOutdPSNmzJ-FmOFFil1_TpNZsbEzJ-hgENAvnMYYw5mt5owDG4iUQg)
-
-[Carreiras](https://www.facebook.com/careers)
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
-
-[Termos da plataforma](/terms/dfc_platform_terms/)
-
-[Políticas do Desenvolvedor](/devpolicy/)
-
-[Política de Privacidade](https://www.facebook.com/about/privacy)
-
-[Cookies](https://www.facebook.com/help/cookies)
-
-Português (Brasil)

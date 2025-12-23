@@ -1,79 +1,11 @@
-![](https://facebook.com/security/hsts-pixel.gif)
-
-[![](/images/developer/m4d_logo_july_2024.svg)](/?no_redirect=1)
-
-[Documentos](/docs/)[Ferramentas](/tools/)[Suporte](/support/)[Entrar](https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fwhatsapp%2Fpricing%2Fconversation-based-pricing%3Fnav_ref%3Dbiz_unified_f3_login_page_to_dfc&login_options%5B0%5D=FB&login_options%5B1%5D=SSO&app=436761779744620&is_work_accounts=1&config_ref=biz_login_tool_flavor_dfc)
-
-[Documentos](/docs/)[Plataforma do WhatsApp Business](/docs/whatsapp)[Preços](/docs/whatsapp/pricing)[Conversation-based pricing](/docs/whatsapp/pricing/conversation-based-pricing)
-
-[Plataforma do WhatsApp Business](/docs/whatsapp)
-
-* [Sobre a plataforma](/docs/whatsapp/overview)
-* [Descontinuação da API Local](/docs/whatsapp/on-premises/sunset)
-* [Cloud vs On-Prem](/docs/whatsapp/cloud-vs-onprem)
-* [Números de telefone](/docs/whatsapp/phone-numbers)
-* [Mensagens](/docs/whatsapp/conversation-types)
-* [Preços](/docs/whatsapp/pricing)
-
-  + [Authentication-International Rates](/docs/whatsapp/pricing/authentication-international-rates)
-  + [Categorização de modelos](/docs/whatsapp/updates-to-pricing/new-template-guidelines)
-  + [Como usar webhooks para rastrear conversas](/docs/whatsapp/api/webhooks/using-webhooks-to-track-conversations)
-  + [Conversation-based pricing](/docs/whatsapp/pricing/conversation-based-pricing)
-* [Limites de mensagens](/docs/whatsapp/messaging-limits)
-* [Webhooks](/docs/whatsapp/webhooks)
-* [Parceiros de soluções](/docs/whatsapp/solution-providers)
-* [Cadastro Incorporado](/docs/whatsapp/embedded-signup)
-* [Prévias de links](/docs/whatsapp/link-previews)
-* [Monitoramento da política](/docs/whatsapp/overview/policy-enforcement)
-* [Registro de alterações](/docs/whatsapp/business-platform/changelog)
-* [Suporte](/docs/whatsapp/support)
-
-Nesta Página
-
-[Conversation-based pricing (DEPRECATED)](#conversation-based-pricing--deprecated-)
-
-[Conversation categories](#conversation-categories)
-
-[Opening conversations](#opening-conversations)
-
-[Marketing, Utility, and Authentication Conversations](#marketing--utility--and-authentication-conversations)
-
-[Service conversations](#service-conversations)
-
-[Customer Service Windows](#customer-service-windows)
-
-[Conversation duration](#conversation-duration)
-
-[Multiple conversations](#multiple-conversations)
-
-[Free Tier conversations](#free-tier-conversations)
-
-[Free Entry Point conversations](#free-entry-point-conversations)
-
-[Rates](#rates)
-
-[Rate Cards](#rate-cards)
-
-[Authentication-International rates](#authentication-international-rates)
-
-[Marketing Messages Lite API pricing](#marketing-messages-lite-api-pricing)
-
-[WhatsApp Business Calling API pricing](#whatsapp-business-calling-api-pricing)
-
-[Updates to rate cards](#updates-to-rate-cards)
-
-[Country calling codes](#country-calling-codes)
-
-[Webhooks](#webhooks)
-
-[Billing](#billing)
-
-[Marketing Messages Lite API](#marketing-messages-lite-api)
-
-[See also](#see-also)
-
-Conversation-based pricing is deprecated. It was replaced on July 1, 2025, with [per-message pricing](/docs/whatsapp/pricing/). The document below is for reference purposes only.
-
++++
+id = "conversation-based-pricing"
+title = "Conversation-based pricing (DEPRECATED)"
+summary = "This document explains how conversation-based pricing works on the WhatsApp Business Platform."
+source = "https://developers.facebook.com/docs/whatsapp/conversation-based-pricing"
+lang = "en"
+tags = ["whatsapp-business-platform", "marketing-messages-lite-api", "webhooks", "messaging", "authentication", "rate-limits", "pricing"]
++++
 # Conversation-based pricing (DEPRECATED)
 
 This document explains how conversation-based pricing works on the WhatsApp Business Platform.
@@ -88,10 +20,10 @@ Businesses are responsible for reviewing the category assigned to their approved
 
 Conversations are categorized with one of the following categories:
 
-* **Marketing** — Enables you to achieve a wide range of goals, from generating awareness to driving sales and retargeting customers. Examples include new product, service, or feature announcements, targeted promotions/offers, and cart abandonment reminders.
-* **Utility** — Enables you to follow-up on user actions or requests. Examples include opt-in confirmation, order/delivery management (e.g., delivery update); account updates or alerts (for example., payment reminder); or feedback surveys.
-* **Authentication** — Enables you authenticate users with one-time pass codes, potentially at multiple steps in the login process (e.g., account verification, account recovery, integrity challenges).
-* **Service** — Enables you to resolve customer inquiries.
+* **Marketing**  Enables you to achieve a wide range of goals, from generating awareness to driving sales and retargeting customers. Examples include new product, service, or feature announcements, targeted promotions/offers, and cart abandonment reminders.
+* **Utility**  Enables you to follow-up on user actions or requests. Examples include opt-in confirmation, order/delivery management (e.g., delivery update); account updates or alerts (for example., payment reminder); or feedback surveys.
+* **Authentication**  Enables you authenticate users with one-time pass codes, potentially at multiple steps in the login process (e.g., account verification, account recovery, integrity challenges).
+* **Service**  Enables you to resolve customer inquiries.
 
 Marketing, utility, and authentication conversations can only be opened with template messages. Service conversations can be opened with any type of message other than a template message.
 
@@ -198,7 +130,7 @@ These rate cards represent the current rates on our platform.
 
 Starting June 1, 2024, we are introducing authentication-international rates. See [Authentication-International Rates](/docs/whatsapp/pricing/authentication-international-rates) to learn about these rates and if they apply to you.
 
-A partir de 1º de abril de 2025, reduziremos as taxas internacionais de autenticação no Egito, na Nigéria, no Paquistão e na África do Sul para manter preços competitivos com canais alternativos.
+A partir de 1o de abril de 2025, reduziremos as taxas internacionais de autenticacao no Egito, na Nigeria, no Paquistao e na Africa do Sul para manter precos competitivos com canais alternativos.
 
 ### Marketing Messages Lite API pricing
 
@@ -231,7 +163,7 @@ To support these efforts, we have made the following updates:
 
 ### Country calling codes
 
-Charges for conversations are based on the country of the user’s phone number. We rely on your customer's country calling code and network prefix (area code) to determine their country. The table below shows how we map country codes to countries or regions. If a country is not listed below, it maps to Other.
+Charges for conversations are based on the country of the users phone number. We rely on your customer's country calling code and network prefix (area code) to determine their country. The table below shows how we map country codes to countries or regions. If a country is not listed below, it maps to Other.
 
 | Markets | Calling Code   (and network prefix if applicable) |
 | --- | --- |
@@ -412,98 +344,3 @@ If you are using the Marketing Messages Lite API ("MM Lite API"), such usage is 
 * [Template Categorization](/docs/whatsapp/updates-to-pricing/new-template-guidelines)
 * [Sending messages with Cloud API](/docs/whatsapp/cloud-api/guides/send-messages)
 * [Sending messages with On-Premises API](/docs/whatsapp/on-premises/guides/messages)
-
-![](https://www.facebook.com/tr?id=675141479195042&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=574561515946252&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=1754628768090156&ev=PageView&noscript=1)
-
-Nesta Página
-
-[Conversation-based pricing (DEPRECATED)](#conversation-based-pricing--deprecated-)
-
-[Conversation categories](#conversation-categories)
-
-[Opening conversations](#opening-conversations)
-
-[Marketing, Utility, and Authentication Conversations](#marketing--utility--and-authentication-conversations)
-
-[Service conversations](#service-conversations)
-
-[Customer Service Windows](#customer-service-windows)
-
-[Conversation duration](#conversation-duration)
-
-[Multiple conversations](#multiple-conversations)
-
-[Free Tier conversations](#free-tier-conversations)
-
-[Free Entry Point conversations](#free-entry-point-conversations)
-
-[Rates](#rates)
-
-[Rate Cards](#rate-cards)
-
-[Authentication-International rates](#authentication-international-rates)
-
-[Marketing Messages Lite API pricing](#marketing-messages-lite-api-pricing)
-
-[WhatsApp Business Calling API pricing](#whatsapp-business-calling-api-pricing)
-
-[Updates to rate cards](#updates-to-rate-cards)
-
-[Country calling codes](#country-calling-codes)
-
-[Webhooks](#webhooks)
-
-[Billing](#billing)
-
-[Marketing Messages Lite API](#marketing-messages-lite-api)
-
-[See also](#see-also)
-
----
-
-![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459257729_1010347667767763_3581566724399163588_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=8mhMcpIjeBkQ7kNvwHkP4-q&_nc_oc=AdlO3ZH_Jvl4nkiSl_NzPx_bZU9wlyyiBqGM7BftG4BZ-zyDTiz3IYeP9jzwyRa3MBM&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_AfhBCEKlvsDIdDRliI5XHkUeBZreDWXnvs81cnR6aYqhPw&oe=6940632C)
-
-* [![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459306853_1501629487899251_7449019458089488547_n.png?_nc_cat=107&ccb=1-7&_nc_sid=e280be&_nc_ohc=G9HoN6clJj0Q7kNvwHW8YOK&_nc_oc=Adl4qqjs2GQ_KCtPcQK5nkyFNKGk2VG_MDKDqJajF6afEsyVXYrgEfPJ8sL7u2Owi3A&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_AfjowmO_x8c62uc-T5dGewSnTHTW7wGQSks5j6PPx4vEbw&oe=694046E2)](https://www.facebook.com/MetaforDevelopers)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/458971466_433154499741175_6962021715663093697_n.png?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=Da_uV3THaUoQ7kNvwF1AAec&_nc_oc=Adms3y4JCEspj3ygUkhiNGbJFZR-oETEUXNTHEA9PBzDGOQ3eeaqgNfhJGrdKa1ekJ8&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_AfgYASBAkCsHw28N83CrDBrXTKBPctFnWJsc2GqPse0YjQ&oe=6940434E)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT1qKHNUsvatteyGFAVhWBe0UByNESWicFubakO2psDgCPK67p5RfmG-RYyxtWJO9pTQBIuLmbQvjWs55fKpjP8eh5lcM-vEqPj_7JICdy9c7OV3Z0hJJ256FG_6HsQ1alaah-7ue_BxGBHxhC1uIA)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459160202_540178488525397_747089945616031028_n.png?_nc_cat=104&ccb=1-7&_nc_sid=e280be&_nc_ohc=xMk3wRUIgeUQ7kNvwHqMDKx&_nc_oc=Adl6-yLpj-oA8nZLGCMRbDVjAOlD1TSf8Z_sncBFZKdi6sBbLBmhs0PA0e_ZoKfMA6g&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_AfgqJxFbFG8iLDUZ24rxaY4CIqUNreEfox7m34Sh1Iv7HQ&oe=69406A98)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT3kV_Lz3GfQZHwDdInj1zYdF7wqrsySyg3Ns5rl6Y-ffyvrPGmSSuxqBxkWDm9UTU6S8r5BISMrlBe88213OdDY61UPDd5bfoKCIuCjp6lRrqAkhTmBYv8CblPAXn2NWgj2Gi4gxTnjTZKRwFYZkw)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/458754681_1046279956748647_3773356972584952025_n.png?_nc_cat=103&ccb=1-7&_nc_sid=e280be&_nc_ohc=g67ScHV0LcEQ7kNvwFE9SaD&_nc_oc=Adnm_fQarb-P9HecEp4ZJiFoXCpivyxrjjzjL9w5N3VW0FuM2Xg2me3lqs_ug_ob2Ns&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_Afj39cQDypIuKY47mpNqyEWI9Tg-utCdBHZaV2LJxVmZrg&oe=694048AC)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT3uagVdWVXUQgIAymCPf9ei3HYHckOemxkOoyegLho3Qtd0psjwp8Dy68ESkrt8bPu3DHnZsdj9uV2HiuDWrnOPSgbJ8huOWZZM-4Gg7qRS24hDNqYsTtIl6OsUh9F0zkn293pv97cXveRMJCAHxw)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459342489_501198322668453_7712071717227028092_n.png?_nc_cat=109&ccb=1-7&_nc_sid=e280be&_nc_ohc=PKQzoyB_GWYQ7kNvwHuQ3Qo&_nc_oc=AdlZ6PusCJjK-MqVyMbegbP9cF2-JParHbS_7SO6tVR_zRZ9As7h2c-aarjHrSmHSyM&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_Afj6Jn71nuRkvOHpbgNU4yhOqj55OD6blemD-kqneXMoAQ&oe=694035F0)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT0utt21D23wbAH8DP2PL0tZK-Gd23lgi9zz9brtjUUm-_AfSgbglHaCSjELGz1qG_lu1aQNq6IzlFdL3xZgselG8LSDBvYYCDRl3iNcPlYMHg5A2CpG8hf4s9y7iYkZanu_tFC3MjQ0bDy1hVSNPg)
-
-#### Desenvolva com a Meta
-
-* [IA](https://developers.meta.com/ai/)
-* [Meta Horizon OS](https://developers.meta.com/horizon/)
-* [Tecnologias sociais](/social-technologies/)
-* [Dispositivos vestíveis](https://l.facebook.com/l.php?u=https%3A%2F%2Fdeveloper.meta.com%2Fwearables%2F&h=AT2w6OtucgOP8jIajmwWiCVrlmPYjJnZGDPm295xy7lqG34ojd0PCmtITY_cvNOLAWi_rqECycG-zjwKOA6GkkZMyFsAg6IcYLYzk9vHVb7VaDr5iv04DF3E1yoFxMeqcrDm0TQLEy_euHNkT7hB3w)
-
-#### Notícias
-
-* [Meta for Developers](https://developers.meta.com/blog/)
-* [Blog](/blog/)
-* [Casos de sucesso](/success-stories/)
-
-#### Suporte
-
-* [Suporte ao desenvolvedor](/support/)
-* [Ferramenta de bug](/support/bugs/)
-* [Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT37CxIpNWGw7xJIZ5BC-0LfArxavOB8UyvgGK2c72q-56RCHcztTkHFbgiJ7e9BQXcho1TFsNZ0Z0s5HeuTeALXzpMeSzzgyIkpXOJl8Kbvf8qJatmm5E4pfhBdzV6OKCWkNfn5PlyaZcGVDErdcA)
-* [Fórum da comunidade de desenvolvedores![](https://static.xx.fbcdn.net/rsrc.php/v4/yE/r/3AaI47RuuWt.png)](https://www.facebook.com/groups/fbdevelopers/)
-* [Relatar um incidente](/incident/report/)
-
-#### Termos e políticas
-
-* [Iniciativas da plataforma responsável](/products/responsible-platform-initiatives/)
-* [Termos da plataforma](/terms/)
-* [Políticas do Desenvolvedor](/devpolicy/)
-
-Siga-nos
-
-* [![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89126182_222315695571651_4936319991919149056_n.svg?_nc_cat=109&ccb=1-7&_nc_sid=e280be&_nc_ohc=jVaAdZR-cusQ7kNvwEcegmJ&_nc_oc=AdmiBraDOmtoE9jJ7N1ARcKhu2zRcVQhE-puYTPRNJUsLeThg-dmKW4EvjEgnWRXg-I&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_Afjlrt4cFDsZCL32C6Y76u9-iATlBr19vbNkaJG7OEPj-A&oe=694042EF)](https://www.facebook.com/MetaforDevelopers)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89319900_506382610280628_2520212398984396800_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=866JCMN-YaAQ7kNvwGu2k-u&_nc_oc=AdnMSFXUTR6BKYOcgLBvfLhyyP4wTHaIBI7IncOuiCIKefiCT_DMS4-PSL-g0qU_7mg&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_Afi0psaI9sVzBerQ8m6zVufrUhyrCAfOiEbKRe3WcGCeFg&oe=69404E75)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT10dpdaqMJL64rZj3TFxfeeDwUyEfqR6jcUdkjSLZD_kto3Fy6_TwbexxGxRDwG8p67C0JyzT8IZE_uTP7mPmraBljwc3ntzmlCvkpT9WMTqED10HFf5gK50HxXt5YXFgPi2uab4XRgi42R0J_CpA)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89154638_493934268150363_1123534170136510464_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=lAaTViSW3NMQ7kNvwFiDJyV&_nc_oc=AdkLWyM25HuFV6d_EdW-d15rekQ2Q0oWryVvfbpvP23K-D9qm0gIk6PzRhQiM9M49zY&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_AfhA6CJ9--RYQZTp3mXcCqp0RNoer7J-akMouWA84CQfag&oe=69406085)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT06dZaJni_ht5kLWsaVUiHY1GOvHOQ7GsxkKnPtpgRh_LolytbnwjI8zZmsP7vvDF9R6txSl44fQFodLaDdRgYgYXMH9zK_eilVL5h_4Sgvj5Qq9oi1bD_2q-dZt4Tvve22_0SSCsMqYVRHhcNICw)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89354779_640044533453459_7031092369583767552_n.svg?_nc_cat=108&ccb=1-7&_nc_sid=e280be&_nc_ohc=YUHZv44W0BEQ7kNvwFsVK8a&_nc_oc=Admq0MiSpCD5BDCCMx7O3kdwvKMKzt4EaBIwfdVwAz6xt3mzqaiSvec83zvkwiZtn-k&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_AfhKk-9JipEUlqLKFxiykYOys6BFUDekkKUMuAXtnKkuqw&oe=694051C6)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT0Jxtg7DELMtdMPTqXCadBh1AjVQbHLGjUrK50n-dbnOLeGQyCPzkFiJc-CPYWrwbMVJSDamP8WtlH4ewpR-Ql0Vj_jNpeTNWXNhcNrNBA7O4CvymoXR1PPiTOHoGfTNsMSjAgumyI09dwmd1AR7A)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89127358_532616317687233_292625476315250688_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=4eJmFx9fWJ0Q7kNvwET74gM&_nc_oc=Adn0VQn8zlM0qhkzEPsvh53FbUilR4Q1JZVrngx32iPmDOad4dTZI7h1ycnyqRss36A&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=hArOSVZBHFH5g8WQClf_Pg&oh=00_AfibzvZPyoOVCESJ-ho-XE5Zjp_O41SJpTMyqPEWdCqy5A&oe=69403994)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT00Vcx5xRZxx1NXQrPcTrJZ3SfifpMFOqgueHjQ5ZRXp3OU_QAac7DzAhwDktEM9cGwWIDscpCsIFIf_g8O11uszncme4k6fhvK6_7_RuV_lG19xhdJmum_i1pBK702KxrUVruqYmFtXp0gL7eTCA)
-
-© 2025 Meta
-
-* [Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT0-aIW86xgNIMvBs2E0zKu1jJ-xh1DGkFeF3-Hm4qgLP1iATzybroIvpyLKWAoY9rLgsAasmoWSEAFWsrJGr8ZMEmDFq1QKc79tC-TljhRQubwh9peO0R7LXDuvJauOorhS-T-9wV5Fx5TJI_sznQ)
-* [Carreiras](https://www.facebook.com/careers)
-* [Política de Privacidade](https://www.facebook.com/about/privacy)
-* [Cookies](https://www.facebook.com/help/cookies)
-* [Termos](https://www.facebook.com/policies)
-
-Português (Brasil)Bahasa IndonesiaDeutschEnglish (US)EspañolEspañol (España)Français (France)ItalianoTiếng ViệtРусскийالعربيةภาษาไทย한국어中文(香港)中文(台灣)中文(简体)日本語
-
-Português (Brasil)

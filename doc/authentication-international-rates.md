@@ -1,84 +1,14 @@
-![](https://facebook.com/security/hsts-pixel.gif)
-
-[![](/images/developer/m4d_logo_july_2024.svg)](/?no_redirect=1)
-
-[Documentos](/docs/)[Ferramentas](/tools/)[Suporte](/support/)[Entrar](https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fwhatsapp%2Fpricing%2Fauthentication-international-rates%3Fnav_ref%3Dbiz_unified_f3_login_page_to_dfc&login_options%5B0%5D=FB&login_options%5B1%5D=SSO&app=436761779744620&is_work_accounts=1&config_ref=biz_login_tool_flavor_dfc)
-
-[Documentos](/docs/)[Plataforma do WhatsApp Business](/docs/whatsapp)[Preços](/docs/whatsapp/pricing)[Authentication-International Rates](/docs/whatsapp/pricing/authentication-international-rates)
-
-[Plataforma do WhatsApp Business](/docs/whatsapp)
-
-* [Sobre a plataforma](/docs/whatsapp/overview)
-* [Descontinuação da API Local](/docs/whatsapp/on-premises/sunset)
-* [Cloud vs On-Prem](/docs/whatsapp/cloud-vs-onprem)
-* [Números de telefone](/docs/whatsapp/phone-numbers)
-* [Mensagens](/docs/whatsapp/conversation-types)
-* [Preços](/docs/whatsapp/pricing)
-
-  + [Authentication-International Rates](/docs/whatsapp/pricing/authentication-international-rates)
-  + [Categorização de modelos](/docs/whatsapp/updates-to-pricing/new-template-guidelines)
-  + [Como usar webhooks para rastrear conversas](/docs/whatsapp/api/webhooks/using-webhooks-to-track-conversations)
-  + [Conversation-based pricing](/docs/whatsapp/pricing/conversation-based-pricing)
-* [Limites de mensagens](/docs/whatsapp/messaging-limits)
-* [Webhooks](/docs/whatsapp/webhooks)
-* [Parceiros de soluções](/docs/whatsapp/solution-providers)
-* [Cadastro Incorporado](/docs/whatsapp/embedded-signup)
-* [Prévias de links](/docs/whatsapp/link-previews)
-* [Monitoramento da política](/docs/whatsapp/overview/policy-enforcement)
-* [Registro de alterações](/docs/whatsapp/business-platform/changelog)
-* [Suporte](/docs/whatsapp/support)
-
-Nesta Página
-
-[Authentication-international rates](#authentication-international-rates)
-
-[Eligibility](#eligibility)
-
-[Countries with authentication-international rates](#countries-with-authentication-international-rates)
-
-[Start times](#start-times)
-
-[Request](#request)
-
-[Request parameters](#request-parameters)
-
-[Response](#response)
-
-[Response parameters](#response-parameters)
-
-[Primary business location](#primary-business-location)
-
-[Set or edit your primary business location](#set-or-edit-your-primary-business-location)
-
-[Primary business location status](#primary-business-location-status)
-
-[Get your location via API](#get-your-location-via-api)
-
-[Response:](#response-)
-
-[Eligibility email](#eligibility-email)
-
-[Exception countries](#exception-countries)
-
-[Example Scenario](#example-scenario)
-
-[Scenario 1](#scenario-1)
-
-[Scenario 2](#scenario-2)
-
-[Webhooks](#webhooks)
-
-[Eligibility webhook](#eligibility-webhook)
-
-[Primary business location update webhook](#primary-business-location-update-webhook)
-
-[Pricing in messages webhook](#pricing-in-messages-webhook)
-
-[Examples](#examples)
-
++++
+id = "authentication-international-rates"
+title = "Authentication-international rates"
+summary = "Specific countries have an authentication-international rate in our rate cards."
+source = "https://developers.facebook.com/docs/whatsapp/authentication-international-rates"
+lang = "en"
+tags = ["whatsapp-business-platform", "webhooks", "messaging", "authentication", "rate-limits", "pricing"]
++++
 # Authentication-international rates
 
-Specific countries have an **authentication-international** rate in our [rate cards](/docs/whatsapp/pricing#rate-cards). If you send an authentication template message to a WhatsApp user whose country calling code is for a country that has an authentication-international rate, the delivered message will be billed the country's authentication–international rate if:
+Specific countries have an **authentication-international** rate in our [rate cards](/docs/whatsapp/pricing#rate-cards). If you send an authentication template message to a WhatsApp user whose country calling code is for a country that has an authentication-international rate, the delivered message will be billed the country's authenticationinternational rate if:
 
 * your business is [eligible](#eligibility) for authentication-international rates
 * your business is based in another country (see [Primary Business Location](#primary-business-location))
@@ -163,7 +93,11 @@ Upon success:
 | --- | --- | --- |
 | `<WABA_ID>` | WhatsApp Business Account (WABA) ID. | `102290129340398` |
 | `<START_TIME>` | Unix timestamp indicating start time for all countries with authentication-international pricing for which you do not have an [exception](#exception-countries). | `1732057507` |
-| `<EXCEPTION_COUNTRY>` | A unique object describing a country that has an exception start time. See [exception country](#exception-countries).  For most WhatsApp Business Accounts, the `exception_countries` array will be empty. | ``` {   "country_code": "ID",   "start_time": 1742450707 } ``` |
+| `<EXCEPTION_COUNTRY>` | A unique object describing a country that has an exception start time. See [exception country](#exception-countries).  For most WhatsApp Business Accounts, the `exception_countries` array will be empty. | ``` {
+   "country_code": "ID",
+   "start_time": 1742450707
+ }
+ ``` |
 
 ## Primary business location
 
@@ -181,9 +115,9 @@ We will attempt to determine where your business is based when:
 
 This process can take up to 3 business days. The outcome of this determination can be:
 
-* **Verified** — We determined where your business is based and set your primary business location to this country (which also triggers a webhook).
-* **Need more information** — We require more information in order to make a determination.
-* **Rejected** — We disagreed with the country you designated in the Business Manager (if you used it to edit the **Primary Business Location** field)
+* **Verified**  We determined where your business is based and set your primary business location to this country (which also triggers a webhook).
+* **Need more information**  We require more information in order to make a determination.
+* **Rejected**  We disagreed with the country you designated in the Business Manager (if you used it to edit the **Primary Business Location** field)
 
 You will be notified of the outcome in your initial [eligibility email](#eligibility-email), or in a separate email if you used the Business Manager to edit your location.
 
@@ -196,21 +130,21 @@ Note that if your primary business location status is not verified but you are p
 To set or edit your primary business location:
 
 1. [Navigate to Business Settings by clicking here](https://business.facebook.com/settings/info?edit_pbl=true)
-2. Select the country of the business’s primary location of operation from the dropdown, or enter it in the text field. Note that this is the location where your business has its headquarters and maintains its bookkeeping records.
+2. Select the country of the businesss primary location of operation from the dropdown, or enter it in the text field. Note that this is the location where your business has its headquarters and maintains its bookkeeping records.
 3. Click **Next**
 4. Answer the questions on the screen. These answers will help Meta verify your primary business location.
 5. Click **Next**
 6. Click **Submit for review**
 
-*Note: You won’t be able to make any changes while your verification is under review.*
+*Note: You wont be able to make any changes while your verification is under review.*
 
 ### Primary business location status
 
 The **Primary Business Location** field in the Business Manager will also display a status:
 
-* **Verified** — We have verified your business's primary location.
-* **Pending verification** — We are in the process of determining your business's primary location.
-* **Rejected** — We disagreed with the country you designated, based on publicly available information and what you included when you edited your location. You can manually edit your location again and include different information as part of your submission.
+* **Verified**  We have verified your business's primary location.
+* **Pending verification**  We are in the process of determining your business's primary location.
+* **Rejected**  We disagreed with the country you designated, based on publicly available information and what you included when you edited your location. You can manually edit your location again and include different information as part of your submission.
 
 ### Get your location via API
 
@@ -234,8 +168,8 @@ Upon success:
 }
 ```
 
-* `<WABA_ID>` — WhatsApp Business Account ID.
-* `<COUNTRY_CODE>` — Two-character country code indicating the country where we have determined the business to be based.
+* `<WABA_ID>`  WhatsApp Business Account ID.
+* `<COUNTRY_CODE>`  Two-character country code indicating the country where we have determined the business to be based.
 
 ## Eligibility email
 
@@ -332,11 +266,11 @@ Please see [Rate cards](/docs/whatsapp/pricing#rate-cards) for the list of count
 }
 ```
 
-* `<WABA_ID>` — WhatsApp Business Account ID.
-* `<WEBHOOK_SENT_TIMESTAMP>` — Unix timestamp indicating when the webhook was sent.
-* `<EXCEPTION_COUNTRY_CODE>` — Two-letter country code (e.g. `ID` for Indonesia) of the country with a start time exception.
-* `<EXCEPTION_START_TIME>` — Unix timestamp indicating authentication-international rate start time for the exception country.
-* `<START_TIME_INDIA>` — Unix timestamp indicating start time for all countries with authentication-international pricing **for which you do not have an exception**.
+* `<WABA_ID>`  WhatsApp Business Account ID.
+* `<WEBHOOK_SENT_TIMESTAMP>`  Unix timestamp indicating when the webhook was sent.
+* `<EXCEPTION_COUNTRY_CODE>`  Two-letter country code (e.g. `ID` for Indonesia) of the country with a start time exception.
+* `<EXCEPTION_START_TIME>`  Unix timestamp indicating authentication-international rate start time for the exception country.
+* `<START_TIME_INDIA>`  Unix timestamp indicating start time for all countries with authentication-international pricing **for which you do not have an exception**.
 
 ### Primary business location update webhook
 
@@ -363,9 +297,9 @@ Subscribe to the `account_update` webhook to be notified when the business's [pr
 }
 ```
 
-* `<WABA_ID>` — WhatsApp Business Account ID.
-* `<TIMESTAMP>` — Unix timestamp indicating when the webhook was sent.
-* `<COUNTRY_CODE>` — ISO 3166-1 alpha-2 country code, indicating the country where we have determined the business to be based.
+* `<WABA_ID>`  WhatsApp Business Account ID.
+* `<TIMESTAMP>`  Unix timestamp indicating when the webhook was sent.
+* `<COUNTRY_CODE>`  ISO 3166-1 alpha-2 country code, indicating the country where we have determined the business to be based.
 
 ### Pricing in messages webhook
 
@@ -413,7 +347,7 @@ A business with a primary business location that does not have an authentication
 
 ![](https://www.facebook.com/tr?id=675141479195042&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=574561515946252&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=1754628768090156&ev=PageView&noscript=1)
 
-Nesta Página
+Nesta Pagina
 
 [Authentication-international rates](#authentication-international-rates)
 
@@ -473,7 +407,7 @@ Desenvolva com a Meta
 
 ---
 
-Notícias
+Noticias
 
 [Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT1obpaLUX4_zeswiN4yHpq50E7jJ9gCLug0rnnKK0f-wERYiztQbL7cL61_jJLA2P4-Mr16zBiyQwJwd0g70gNd147YVoF9tmgj7PrVlTVDfcnyoHsQEjYvqREyy6VQIOy4NcPbBiYlLxUJhOWhuw)[Blog](/blog/)[Casos de sucesso](/success-stories/)
 
@@ -481,13 +415,13 @@ Notícias
 
 Suporte
 
-[Suporte ao desenvolvedor](/support/)[Ferramenta de bug](/support/bugs/)[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT1obpaLUX4_zeswiN4yHpq50E7jJ9gCLug0rnnKK0f-wERYiztQbL7cL61_jJLA2P4-Mr16zBiyQwJwd0g70gNd147YVoF9tmgj7PrVlTVDfcnyoHsQEjYvqREyy6VQIOy4NcPbBiYlLxUJhOWhuw)[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)[Relatar um incidente](/incident/report/)
+[Suporte ao desenvolvedor](/support/)[Ferramenta de bug](/support/bugs/)[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT1obpaLUX4_zeswiN4yHpq50E7jJ9gCLug0rnnKK0f-wERYiztQbL7cL61_jJLA2P4-Mr16zBiyQwJwd0g70gNd147YVoF9tmgj7PrVlTVDfcnyoHsQEjYvqREyy6VQIOy4NcPbBiYlLxUJhOWhuw)[Forum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)[Relatar um incidente](/incident/report/)
 
 ---
 
-Termos e políticas
+Termos e politicas
 
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)[Termos da plataforma](/terms/dfc_platform_terms/)[Políticas do Desenvolvedor](/devpolicy/)[Política de Privacidade](https://www.facebook.com/about/privacy)[Cookies](https://www.facebook.com/help/cookies)
+[Iniciativas de plataforma responsavel](/products/responsible-platform-initiatives/)[Termos da plataforma](/terms/dfc_platform_terms/)[Politicas do Desenvolvedor](/devpolicy/)[Politica de Privacidade](https://www.facebook.com/about/privacy)[Cookies](https://www.facebook.com/help/cookies)
 
 ---
 
@@ -505,7 +439,7 @@ Desenvolva com a Meta
 
 [Tecnologias sociais](/social-technologies/)
 
-Notícias
+Noticias
 
 [Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT1obpaLUX4_zeswiN4yHpq50E7jJ9gCLug0rnnKK0f-wERYiztQbL7cL61_jJLA2P4-Mr16zBiyQwJwd0g70gNd147YVoF9tmgj7PrVlTVDfcnyoHsQEjYvqREyy6VQIOy4NcPbBiYlLxUJhOWhuw)
 
@@ -521,7 +455,7 @@ Suporte
 
 [Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT1obpaLUX4_zeswiN4yHpq50E7jJ9gCLug0rnnKK0f-wERYiztQbL7cL61_jJLA2P4-Mr16zBiyQwJwd0g70gNd147YVoF9tmgj7PrVlTVDfcnyoHsQEjYvqREyy6VQIOy4NcPbBiYlLxUJhOWhuw)
 
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
+[Forum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
 
 [Relatar um incidente](/incident/report/)
 
@@ -531,15 +465,15 @@ Quem somos
 
 [Carreiras](https://www.facebook.com/careers)
 
-Termos e políticas
+Termos e politicas
 
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
+[Iniciativas de plataforma responsavel](/products/responsible-platform-initiatives/)
 
 [Termos da plataforma](/terms/dfc_platform_terms/)
 
-[Políticas do Desenvolvedor](/devpolicy/)
+[Politicas do Desenvolvedor](/devpolicy/)
 
-[Política de Privacidade](https://www.facebook.com/about/privacy)
+[Politica de Privacidade](https://www.facebook.com/about/privacy)
 
 [Cookies](https://www.facebook.com/help/cookies)
 
@@ -551,7 +485,7 @@ Desenvolva com a Meta
 
 [Tecnologias sociais](/social-technologies/)
 
-Notícias
+Noticias
 
 [Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT1obpaLUX4_zeswiN4yHpq50E7jJ9gCLug0rnnKK0f-wERYiztQbL7cL61_jJLA2P4-Mr16zBiyQwJwd0g70gNd147YVoF9tmgj7PrVlTVDfcnyoHsQEjYvqREyy6VQIOy4NcPbBiYlLxUJhOWhuw)
 
@@ -567,7 +501,7 @@ Suporte
 
 [Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT1obpaLUX4_zeswiN4yHpq50E7jJ9gCLug0rnnKK0f-wERYiztQbL7cL61_jJLA2P4-Mr16zBiyQwJwd0g70gNd147YVoF9tmgj7PrVlTVDfcnyoHsQEjYvqREyy6VQIOy4NcPbBiYlLxUJhOWhuw)
 
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
+[Forum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
 
 [Relatar um incidente](/incident/report/)
 
@@ -577,15 +511,15 @@ Quem somos
 
 [Carreiras](https://www.facebook.com/careers)
 
-Termos e políticas
+Termos e politicas
 
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
+[Iniciativas de plataforma responsavel](/products/responsible-platform-initiatives/)
 
 [Termos da plataforma](/terms/dfc_platform_terms/)
 
-[Políticas do Desenvolvedor](/devpolicy/)
+[Politicas do Desenvolvedor](/devpolicy/)
 
-[Política de Privacidade](https://www.facebook.com/about/privacy)
+[Politica de Privacidade](https://www.facebook.com/about/privacy)
 
 [Cookies](https://www.facebook.com/help/cookies)
 
@@ -597,7 +531,7 @@ Desenvolva com a Meta
 
 [Tecnologias sociais](/social-technologies/)
 
-Notícias
+Noticias
 
 [Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT1obpaLUX4_zeswiN4yHpq50E7jJ9gCLug0rnnKK0f-wERYiztQbL7cL61_jJLA2P4-Mr16zBiyQwJwd0g70gNd147YVoF9tmgj7PrVlTVDfcnyoHsQEjYvqREyy6VQIOy4NcPbBiYlLxUJhOWhuw)
 
@@ -613,7 +547,7 @@ Suporte
 
 [Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT1obpaLUX4_zeswiN4yHpq50E7jJ9gCLug0rnnKK0f-wERYiztQbL7cL61_jJLA2P4-Mr16zBiyQwJwd0g70gNd147YVoF9tmgj7PrVlTVDfcnyoHsQEjYvqREyy6VQIOy4NcPbBiYlLxUJhOWhuw)
 
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
+[Forum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
 
 [Relatar um incidente](/incident/report/)
 
@@ -623,16 +557,16 @@ Quem somos
 
 [Carreiras](https://www.facebook.com/careers)
 
-Termos e políticas
+Termos e politicas
 
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
+[Iniciativas de plataforma responsavel](/products/responsible-platform-initiatives/)
 
 [Termos da plataforma](/terms/dfc_platform_terms/)
 
-[Políticas do Desenvolvedor](/devpolicy/)
+[Politicas do Desenvolvedor](/devpolicy/)
 
-[Política de Privacidade](https://www.facebook.com/about/privacy)
+[Politica de Privacidade](https://www.facebook.com/about/privacy)
 
 [Cookies](https://www.facebook.com/help/cookies)
 
-Português (Brasil)
+Portugues (Brasil)

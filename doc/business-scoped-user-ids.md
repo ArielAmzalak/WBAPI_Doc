@@ -1,153 +1,11 @@
-![](https://facebook.com/security/hsts-pixel.gif)
-
-[![](/images/developer/m4d_logo_july_2024.svg)](/?no_redirect=1)
-
-[Documentos](/docs/)[Ferramentas](/tools/)[Suporte](/support/)[Entrar](https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fwhatsapp%2Fbusiness-scoped-user-ids%3Fnav_ref%3Dbiz_unified_f3_login_page_to_dfc&login_options%5B0%5D=FB&login_options%5B1%5D=SSO&app=436761779744620&is_work_accounts=1&config_ref=biz_login_tool_flavor_dfc)
-
-[Documentos](/docs/)[Plataforma do WhatsApp Business](/docs/whatsapp)[Sobre a plataforma](/docs/whatsapp/overview)[Business-scoped user IDs](/docs/whatsapp/business-scoped-user-ids)
-
-[Plataforma do WhatsApp Business](/docs/whatsapp)
-
-* [Sobre a plataforma](/docs/whatsapp/overview)
-
-  + [Contas do WhatsApp Business](/docs/whatsapp/overview/business-accounts)
-  + [Official Business Accounts](/docs/whatsapp/official-business-accounts)
-  + [Business-scoped user IDs](/docs/whatsapp/business-scoped-user-ids)
-  + [Business profiles](/docs/whatsapp/business-profiles)
-  + [Display names](/docs/whatsapp/display-names)
-  + [Receber aceitação](/docs/whatsapp/overview/getting-opt-in)
-  + [Identity Change](/docs/whatsapp/overview/identity-change)
-  + [Códigos QR e links curtos](/docs/whatsapp/overview/qr-codes)
-* [Descontinuação da API Local](/docs/whatsapp/on-premises/sunset)
-* [Cloud vs On-Prem](/docs/whatsapp/cloud-vs-onprem)
-* [Números de telefone](/docs/whatsapp/phone-numbers)
-* [Mensagens](/docs/whatsapp/conversation-types)
-* [Preços](/docs/whatsapp/pricing)
-* [Limites de mensagens](/docs/whatsapp/messaging-limits)
-* [Webhooks](/docs/whatsapp/webhooks)
-* [Parceiros de soluções](/docs/whatsapp/solution-providers)
-* [Cadastro Incorporado](/docs/whatsapp/embedded-signup)
-* [Prévias de links](/docs/whatsapp/link-previews)
-* [Monitoramento da política](/docs/whatsapp/overview/policy-enforcement)
-* [Registro de alterações](/docs/whatsapp/business-platform/changelog)
-* [Suporte](/docs/whatsapp/support)
-
-Nesta Página
-
-[Business-scoped user IDs](#business-scoped-user-ids)
-
-[User usernames](#user-usernames)
-
-[Business-scoped user ID](#business-scoped-user-id)
-
-[Phone numbers](#phone-numbers)
-
-[Country codes](#country-codes)
-
-[Business usernames](#business-usernames)
-
-[Reserved usernames](#reserved-usernames)
-
-[Chat window display priority](#chat-window-display-priority)
-
-[Support](#support)
-
-[Adopt or change a business username](#adopt-or-change-a-business-username)
-
-[Get current username](#get-current-username)
-
-[Get reserved usernames](#get-reserved-usernames)
-
-[Delete a username](#delete-a-username)
-
-[Response syntax:](#response-syntax-)
-
-[Cancel pending username request](#cancel-pending-username-request)
-
-[phone\_number\_username\_update webhook](#phone-number-username-update-webhook)
-
-[Messages](#messages)
-
-[Send message requests](#send-message-requests)
-
-[Send message response](#send-message-response)
-
-[Error codes](#error-codes)
-
-[Marketing Messages API for WhatsApp](#marketing-messages-api-for-whatsapp)
-
-[Send marketing message requests](#send-marketing-message-requests)
-
-[Send marketing message response](#send-marketing-message-response)
-
-[Messages webhooks](#messages-webhooks)
-
-[Status messages webhooks](#status-messages-webhooks)
-
-[Incoming messages webhooks](#incoming-messages-webhooks)
-
-[System status messages webhooks](#system-status-messages-webhooks)
-
-[User\_preferences webhooks](#user-preferences-webhooks)
-
-[Groups API](#groups-api)
-
-[Get group info](#get-group-info)
-
-[Get group join requests](#get-group-join-requests)
-
-[Remove group participants](#remove-group-participants)
-
-[Groups API webhooks](#groups-api-webhooks)
-
-[group\_participants\_update webhooks](#group-participants-update-webhooks)
-
-[Blosk Users API](#blosk-users-api)
-
-[Block or unblock user requests](#block-or-unblock-user-requests)
-
-[Calling API](#calling-api)
-
-[Businesses-initiated call requests](#businesses-initiated-call-requests)
-
-[Get call permissions](#get-call-permissions)
-
-[Send call permission request](#send-call-permission-request)
-
-[Call permission request webhooks](#call-permission-request-webhooks)
-
-[Business-initiated connected calls webhooks](#business-initiated-connected-calls-webhooks)
-
-[User-initiated connected calls webhooks](#user-initiated-connected-calls-webhooks)
-
-[Business-initiated terminated calls webhooks](#business-initiated-terminated-calls-webhooks)
-
-[User-initiated terminated calls webhooks](#user-initiated-terminated-calls-webhooks)
-
-[Business-initiated calls status webhooks](#business-initiated-calls-status-webhooks)
-
-[SIP invites for business-initiated calls](#sip-invites-for-business-initiated-calls)
-
-[SIP invites for user-initiated calls](#sip-invites-for-user-initiated-calls)
-
-[SIP OK responses for business-initiated calls](#sip-ok-responses-for-business-initiated-calls)
-
-[SIP BYE responses for business- and user-initiated calls](#sip-bye-responses-for-business--and-user-initiated-calls)
-
-[Coexistence](#coexistence)
-
-[History webhooks](#history-webhooks)
-
-[smb\_message\_echoes webhooks](#smb-message-echoes-webhooks)
-
-[smb\_app\_state\_sync webhooks](#smb-app-state-sync-webhooks)
-
-[Analytics](#analytics)
-
-[Billing and invoicing](#billing-and-invoicing)
-
-[FAQs](#faqs)
-
++++
+id = "business-scoped-user-ids"
+title = "Business-scoped user IDs"
+summary = "WhatsApp is launching usernames later in 2026."
+source = "https://developers.facebook.com/docs/whatsapp/business-scoped-user-ids"
+lang = "en"
+tags = ["whatsapp-business-platform", "marketing-messages-lite-api", "webhooks", "messaging", "phone-numbers", "authentication", "analytics"]
++++
 # Business-scoped user IDs
 
 WhatsApp is launching usernames later in 2026.
@@ -269,17 +127,17 @@ Response syntax, upon success:
 }
 ```
 
-* `status` — The status of the latest requested username. Values can be:
-  + `APPROVED` — The requested username has been approved and will be active once the usernames feature is made available.
-  + `REJECTED` — The requested username has been rejected. The business phone number's existing approved username, if any, will remain in place. Check `rejection_reasons` for details.
-  + `PENDING` — The username is undergoing review. When a decision is made, a phone\_number\_username\_update webhook will be triggered, indicating the new status.
-* `rejection_reasons` — An array of strings indicated the reason(s) for the rejection. Only included if the requested username has been rejected. Values can be:
-  + `REQUIRE_FB_ACCOUNT_LINKING` — The requested username may be available if you [link](https://www.facebook.com/business/help/4631406400243963) your WhatsApp business phone number to the Facebook Page.
-  + `REQUIRE_IG_ACCOUNT_LINKING` — The requested username may be available if you link your WhatsApp business phone number to the Instagram account.
-  + `EXISTING_PENDING_REQUEST` — A previously requested username is still undergoing review.
-  + `NOT_AVAILABLE` — The username is not available because it is associated with another account or it doesn’t pass our internal checks.
-  + `ACCOUNT_INELIGIBLE` — The account is not eligible to request a username. The business phone number's [display name](/docs/whatsapp/display-names) must be approved, and the owning business must be [verified](https://www.facebook.com/business/help/2058515294227817).
-  + `UNKNOWN` — Rejected for an unknown reason. Please contact support.
+* `status`  The status of the latest requested username. Values can be:
+  + `APPROVED`  The requested username has been approved and will be active once the usernames feature is made available.
+  + `REJECTED`  The requested username has been rejected. The business phone number's existing approved username, if any, will remain in place. Check `rejection_reasons` for details.
+  + `PENDING`  The username is undergoing review. When a decision is made, a phone\_number\_username\_update webhook will be triggered, indicating the new status.
+* `rejection_reasons`  An array of strings indicated the reason(s) for the rejection. Only included if the requested username has been rejected. Values can be:
+  + `REQUIRE_FB_ACCOUNT_LINKING`  The requested username may be available if you [link](https://www.facebook.com/business/help/4631406400243963) your WhatsApp business phone number to the Facebook Page.
+  + `REQUIRE_IG_ACCOUNT_LINKING`  The requested username may be available if you link your WhatsApp business phone number to the Instagram account.
+  + `EXISTING_PENDING_REQUEST`  A previously requested username is still undergoing review.
+  + `NOT_AVAILABLE`  The username is not available because it is associated with another account or it doesnt pass our internal checks.
+  + `ACCOUNT_INELIGIBLE`  The account is not eligible to request a username. The business phone number's [display name](/docs/whatsapp/display-names) must be approved, and the owning business must be [verified](https://www.facebook.com/business/help/2058515294227817).
+  + `UNKNOWN`  Rejected for an unknown reason. Please contact support.
 
 ### Get current username
 
@@ -304,11 +162,11 @@ Response syntax:
 }
 ```
 
-* `username` — Current username. Will be an empty string if the business phone number has no username.
-* `status` — Username status. Values can be:
-  + `ACTIVE` — The username is approved and will become active once the usernames feature is made available.
-  + `RESERVED` — The username is reserved for the business phone number but is not active.
-* `requested_username` — Requested username. This property will only be included if a new username has been requested on the business phone number, but the requested username is still undergoing review.
+* `username`  Current username. Will be an empty string if the business phone number has no username.
+* `status`  Username status. Values can be:
+  + `ACTIVE`  The username is approved and will become active once the usernames feature is made available.
+  + `RESERVED`  The username is reserved for the business phone number but is not active.
+* `requested_username`  Requested username. This property will only be included if a new username has been requested on the business phone number, but the requested username is still undergoing review.
 
 ### Get reserved usernames
 
@@ -338,7 +196,7 @@ Response syntax:
 }
 ```
 
-* `username_suggestions` — An array of reserved usernames, if any. These usernames have a higher chance of approval.
+* `username_suggestions`  An array of reserved usernames, if any. These usernames have a higher chance of approval.
 
 ### Delete a username
 
@@ -359,7 +217,7 @@ curl -X DELETE 'https://graph.facebook.com/<API_VERSION>/<BUSINESS_PHONE_NUMBER_
 }
 ```
 
-* `success` — Boolean. Will be set to `true` if the username is deleted successfully, otherwise it will be set to `false`.
+* `success`  Boolean. Will be set to `true` if the username is deleted successfully, otherwise it will be set to `false`.
 
 ### Cancel pending username request
 
@@ -380,7 +238,7 @@ curl -X DELETE 'https://graph.facebook.com/<API_VERSION>/<BUSINESS_PHONE_NUMBER_
 }
 ```
 
-* `success` — Boolean. Will be set to `true` if the username is deleted successfully, otherwise it will be set to `false`.
+* `success`  Boolean. Will be set to `true` if the username is deleted successfully, otherwise it will be set to `false`.
 
 ### phone\_number\_username\_update webhook
 
@@ -412,19 +270,19 @@ A new **phone\_number\_username\_update** webhook will be added. This webhook wi
 }
 ```
 
-* `id` — WhatsApp Business Account ID.
-* `time` — Unix timestamp indicated when the webhook was triggered
-* `display_phone_number` — The business phone number's display number (the number displayed on your profile in the app.
-* `decision` — Indicates the outcome of the business username review process. Values can be:
-  + `APPROVED` — Indicates the username has been approved and will become active once the usernames feature is made available.
-  + `REJECTED` — Indicates the username has been rejected. You can edit the name using WhatsApp Manager. Review the rejection reason before editing.
-* `requested_username` — The requested username.
-* `rejection_reasons` — Indicates the reason why the business username was rejected, if it was rejected. Values can be:
-  + `REQUIRE_FB_ACCOUNT_LINKING` — The requested username is associated with an existing Facebook page. To claim the username, you must first [add your business phone number to the Page](https://www.facebook.com/business/help/4631406400243963).
-  + `REQUIRE_IG_ACCOUNT_LINKING` — The requested username is associated with an existing Instagram handle. To claim the username, you must first add your business phone number to the Instagram account.
-  + `NOT_AVAILABLE` — The username is not available because it is associated with another account or it doesn’t pass our internal checks.
-  + `ACCOUNT_INELIGIBLE` — The account is not eligible to request a username. The business phone number's [display name](/docs/whatsapp/display-names) must be approved, and the owning business must be [verified](https://www.facebook.com/business/help/2058515294227817).
-  + `UNKNOWN` — Rejected for an unknown reason. Please contact support.
+* `id`  WhatsApp Business Account ID.
+* `time`  Unix timestamp indicated when the webhook was triggered
+* `display_phone_number`  The business phone number's display number (the number displayed on your profile in the app.
+* `decision`  Indicates the outcome of the business username review process. Values can be:
+  + `APPROVED`  Indicates the username has been approved and will become active once the usernames feature is made available.
+  + `REJECTED`  Indicates the username has been rejected. You can edit the name using WhatsApp Manager. Review the rejection reason before editing.
+* `requested_username`  The requested username.
+* `rejection_reasons`  Indicates the reason why the business username was rejected, if it was rejected. Values can be:
+  + `REQUIRE_FB_ACCOUNT_LINKING`  The requested username is associated with an existing Facebook page. To claim the username, you must first [add your business phone number to the Page](https://www.facebook.com/business/help/4631406400243963).
+  + `REQUIRE_IG_ACCOUNT_LINKING`  The requested username is associated with an existing Instagram handle. To claim the username, you must first add your business phone number to the Instagram account.
+  + `NOT_AVAILABLE`  The username is not available because it is associated with another account or it doesnt pass our internal checks.
+  + `ACCOUNT_INELIGIBLE`  The account is not eligible to request a username. The business phone number's [display name](/docs/whatsapp/display-names) must be approved, and the owning business must be [verified](https://www.facebook.com/business/help/2058515294227817).
+  + `UNKNOWN`  Rejected for an unknown reason. Please contact support.
 
 ## Messages
 
@@ -450,7 +308,7 @@ This example syntax is sending a text message, but the changes apply to all mess
 }'
 ```
 
-* `to` — Supports both WhatsApp user phone numbers and user BSUIDs.
+* `to`  Supports both WhatsApp user phone numbers and user BSUIDs.
 
 ### Send message response
 
@@ -474,9 +332,9 @@ These changes apply to [POST /<BUSINESS\_PHONE\_NUMBER\_ID>/messages](/docs/grap
 }
 ```
 
-* `input` — Will return the user's BSUID if you send the message to the user's BSUID. Otherwise, it will return the user's phone number, or group ID (if sent the message to a group).
-* `wa_id` — Will be set to empty if you sent the message to the user's BSUID.
-* `user_id` — New property. Will be set to the user's BSUID if you sent the message to the user's BSUID. Otherwise, the property will be omitted.
+* `input`  Will return the user's BSUID if you send the message to the user's BSUID. Otherwise, it will return the user's phone number, or group ID (if sent the message to a group).
+* `wa_id`  Will be set to empty if you sent the message to the user's BSUID.
+* `user_id`  New property. Will be set to the user's BSUID if you sent the message to the user's BSUID. Otherwise, the property will be omitted.
 
 Example response to a send message request sent to a user's phone number:
 
@@ -521,8 +379,8 @@ Example response to a send message request sent to a user's BSUID:
 
 Adding new error code response to the [POST /<BUSINESS\_PHONE\_NUMBER\_ID>/messages](/docs/graph-api/reference/whats-app-business-account-to-number-current-status/messages/#Creating) endpoint.
 
-* Error code — `131062`
-* Details — `You can only send authentication messages to recipients' phone numbers, not their business-scoped user IDs.`
+* Error code  `131062`
+* Details  `You can only send authentication messages to recipients' phone numbers, not their business-scoped user IDs.`
 
 ## Marketing Messages API for WhatsApp
 
@@ -548,7 +406,7 @@ These changes will apply to [POST /<BUSINESS\_PHONE\_NUMBER\_ID>/marketing\_mess
 }'
 ```
 
-* `to` — Supports both WhatsApp user phone numbers and user BSUIDs.
+* `to`  Supports both WhatsApp user phone numbers and user BSUIDs.
 
 ### Send marketing message response
 
@@ -573,9 +431,9 @@ These changes apply to [POST /<BUSINESS\_PHONE\_NUMBER\_ID>/marketing\_messages]
 }
 ```
 
-* `input` — Will return the user's BSUID if you send the message to the user's BSUID. Otherwise, it will return the user's phone number, or group ID (if sent the message to a group).
-* `wa_id` — Will be set to empty if you sent the message to the user's BSUID.
-* `user_id` — New property. Will be set to the user's BSUID if you sent the message to the user's BSUID. Otherwise, the property will be omitted.
+* `input`  Will return the user's BSUID if you send the message to the user's BSUID. Otherwise, it will return the user's phone number, or group ID (if sent the message to a group).
+* `wa_id`  Will be set to empty if you sent the message to the user's BSUID.
+* `user_id`  New property. Will be set to the user's BSUID if you sent the message to the user's BSUID. Otherwise, the property will be omitted.
 
 Example response to a send a template message to a user's phone number:
 
@@ -685,17 +543,17 @@ Exception: Groups API sent or failed status messages webhooks are unaffected.
 }
 ```
 
-* `contacts` — New array. Only included for sent, delivered, and read status messages. Will be omitted entirely for failed status messages webhooks.
-  + `name` — New property. Value will be set to the WhatsApp user's display name.
-  + `username` — New property. Will be set to the WhatsApp user's username if the user has adopted a username. Will be omitted entirely for sent status messages webhooks.
-  + `country_code` — New property. Will be set to the WhatsApp user's country code (*subject to change*).
-  + `wa_id` — New property. Will be set to empty if the user has adopted a username and (1) you sent the message to the user's BSUID, (2) you haven't messaged the user's phone number within the last 30 days, or (3) the user has not added your number to their WhatsApp contacts list. If you sent the message to the user's phone number, it will be set to the user's phone number.
-  + `user_id` — New property. Will be set to the WhatsApp user's BSUID.
-* `recipient_id` — New empty value. Will be set to:
+* `contacts`  New array. Only included for sent, delivered, and read status messages. Will be omitted entirely for failed status messages webhooks.
+  + `name`  New property. Value will be set to the WhatsApp user's display name.
+  + `username`  New property. Will be set to the WhatsApp user's username if the user has adopted a username. Will be omitted entirely for sent status messages webhooks.
+  + `country_code`  New property. Will be set to the WhatsApp user's country code (*subject to change*).
+  + `wa_id`  New property. Will be set to empty if the user has adopted a username and (1) you sent the message to the user's BSUID, (2) you haven't messaged the user's phone number within the last 30 days, or (3) the user has not added your number to their WhatsApp contacts list. If you sent the message to the user's phone number, it will be set to the user's phone number.
+  + `user_id`  New property. Will be set to the WhatsApp user's BSUID.
+* `recipient_id`  New empty value. Will be set to:
   + the WhatsApp user's phone number, if you sent the message to the user's phone number.
   + the group ID, if you sent the message to a group.
   + empty, if you sent the message to the user's BSUID and (1) you haven't messaged the user's phone number within the last 30 days, and (2) the user has not added your number to their WhatsApp contacts list.
-* `recipient_user_id` — New property. Will be set to the user's BSUID if you sent the message to the user's BSUID. Otherwise, the property will be omitted entirely.
+* `recipient_user_id`  New property. Will be set to the user's BSUID if you sent the message to the user's BSUID. Otherwise, the property will be omitted entirely.
 
 Example delivered status messages webhook describing a message sent to the phone number of a WhatsApp user who has enabled the usernames feature:
 
@@ -850,12 +708,12 @@ The example syntax below is for an incoming **text** message, but the changes ar
 }
 ```
 
-* `username` — New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
-* `country_code` — New property. Set to the user's country code (*subject to change*).
-* `wa_id` — New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list, otherwise set to the user's phone number.
-* `user_id` — New property, set to the user's BSUID.
-* `from` — New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `from_user_id` — New property, set to the user's BSUID.
+* `username`  New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
+* `country_code`  New property. Set to the user's country code (*subject to change*).
+* `wa_id`  New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list, otherwise set to the user's phone number.
+* `user_id`  New property, set to the user's BSUID.
+* `from`  New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `from_user_id`  New property, set to the user's BSUID.
 
 Example incoming text message from a user who has enabled the username feature. In this scenario, the business has not messaged the user's phone number in the last 30 days, and the user has not added the business's phone number to their WhatsApp contacts list. Note that `wa_id`, which would normally be set to the user's phone number, is empty:
 
@@ -946,10 +804,10 @@ These changes apply to [system status](/docs/whatsapp/cloud-api/webhooks/referen
 }
 ```
 
-* `body` — New string. Will be set to `User <WHATSAPP_USER_PROFILE_NAME> changed from <OLD_BSUID> to NEW_BSUID` if the user changed their business phone number.
-* `wa_id` — New (empty) value. Will be set to empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `user_id` — New property. Will be set to the user's new BSUID.
-* `type` — New (`user_changed_user_id`) value. Will be set to `user_changed_user_id` if the user changed their business phone number.
+* `body`  New string. Will be set to `User <WHATSAPP_USER_PROFILE_NAME> changed from <OLD_BSUID> to NEW_BSUID` if the user changed their business phone number.
+* `wa_id`  New (empty) value. Will be set to empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `user_id`  New property. Will be set to the user's new BSUID.
+* `type`  New (`user_changed_user_id`) value. Will be set to `user_changed_user_id` if the user changed their business phone number.
 
 ### User\_preferences webhooks
 
@@ -999,10 +857,10 @@ These changes will apply to [user\_preferences](/docs/whatsapp/cloud-api/webhook
 }
 ```
 
-* `username` — New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
-* `country_code` — New property. Set to the user's country code (*subject to change*).
-* `wa_id` — New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list, otherwise set to the user's phone number.
-* `user_id` — New property, set to the user's BSUID.
+* `username`  New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
+* `country_code`  New property. Set to the user's country code (*subject to change*).
+* `wa_id`  New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list, otherwise set to the user's phone number.
+* `user_id`  New property, set to the user's BSUID.
 
 ## Groups API
 
@@ -1026,10 +884,10 @@ These changes apply to [GET /<GROUP\_ID>](/docs/whatsapp/cloud-api/groups/refere
 }
 ```
 
-* `wa_id` — New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, will be set to the user's phone number.
-  `user_id` — New property, set to the user's BSUID.
-* `username` — New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
-* `country_code` — New property. Set to the user's country code (*subject to change*).
+* `wa_id`  New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, will be set to the user's phone number.
+  `user_id`  New property, set to the user's BSUID.
+* `username`  New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
+* `country_code`  New property. Set to the user's country code (*subject to change*).
 
 ### Get group join requests
 
@@ -1056,10 +914,10 @@ These changes apply to [GET /<GROUP\_ID>/join\_requests](/docs/whatsapp/cloud-ap
 }
 ```
 
-* `wa_id` — New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, will be set to the user's phone number.
-* `user_id` — New property, set to the user's BSUID.
-* `username` — New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
-* `country_code` — New property. Set to the user's country code (*subject to change*).
+* `wa_id`  New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, will be set to the user's phone number.
+* `user_id`  New property, set to the user's BSUID.
+* `username`  New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
+* `country_code`  New property. Set to the user's country code (*subject to change*).
 
 ### Remove group participants
 
@@ -1080,7 +938,7 @@ curl -g -X DELETE 'https://graph.facebook.com/<API_VERSION>/<GROUP_ID>/participa
 }'
 ```
 
-* `user` — Will accept a user's phone number or BSUID.
+* `user`  Will accept a user's phone number or BSUID.
 
 ## Groups API webhooks
 
@@ -1169,10 +1027,10 @@ These changes apply to the [group\_participants\_update](/docs/whatsapp/cloud-ap
 }
 ```
 
-* `wa_id` — New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `user_id` — New property. Will be set to the user's BSUID.
-* `username` — New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
-* `country_code` — New property. Will be set to the user's country code (*subject to change*).
+* `wa_id`  New value (empty). Will be empty if the user has enabled the username feature and you have not messaged the user's phone number in the last 30 days, or your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `user_id`  New property. Will be set to the user's BSUID.
+* `username`  New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
+* `country_code`  New property. Will be set to the user's country code (*subject to change*).
 
 ## Blosk Users API
 
@@ -1195,9 +1053,9 @@ These changes apply to the POST and DELETE [Block Users](/docs/whatsapp/cloud-ap
 }
 ```
 
-* `input` — Will be set to the user's BSUID if you used their BSUID when blocking or unblocking the user. Will be set to the user's phone number if you used their phone number when blocking or unblocking the user.
-* `wa_id` — New empty value. Will be set to empty if you used the user's BSUID when blocking or unblocking the user. Will be set to the user's phone number if you used their phone number when blocking or unblocking the user.
-* `user_id` — New property. Will be set to the user's BSUID if you used the user's BSUID when blocking or unblocking the user. If you used their phone number, the property will be omitted.
+* `input`  Will be set to the user's BSUID if you used their BSUID when blocking or unblocking the user. Will be set to the user's phone number if you used their phone number when blocking or unblocking the user.
+* `wa_id`  New empty value. Will be set to empty if you used the user's BSUID when blocking or unblocking the user. Will be set to the user's phone number if you used their phone number when blocking or unblocking the user.
+* `user_id`  New property. Will be set to the user's BSUID if you used the user's BSUID when blocking or unblocking the user. If you used their phone number, the property will be omitted.
 
 ## Calling API
 
@@ -1221,7 +1079,7 @@ The changes apply to business-initiated Calling API requests.
 }'
 ```
 
-* `to` — Supports both WhatsApp user phone numbers and user BSUIDs.
+* `to`  Supports both WhatsApp user phone numbers and user BSUIDs.
 
 ### Get call permissions
 
@@ -1232,7 +1090,7 @@ curl 'https://graph.facebook.com/<API_VERSION>/<BUSINESS_PHONE_NUMBER_ID>/call_p
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 ```
 
-* `user_wa_id` — Accepts both WhatsApp user phone numbers and user BSUIDs.
+* `user_wa_id`  Accepts both WhatsApp user phone numbers and user BSUIDs.
 
 ### Send call permission request
 
@@ -1294,12 +1152,12 @@ These changes apply to business-initiated [connected calls](/docs/whatsapp/cloud
 }
 ```
 
-* `contacts` — A new contacts object will be included.
-* `name` — New property. This will be set to the user's profile name.
-* `country_code` — New property. This will be set to the user's country code (*subject to change*).
-* `user_id` — New property. This will be set to the user's BSUID.
-* `to` — New empty value. This will be set to the WhatsApp user's phone number if the user has adopted a username and (1) the message was sent to their phone number, (2) your business phone number is already in the user's WhatsApp contacts list, or (3) you have messaged or called their phone number within the last 30 days. Otherwise, it will be set to an empty string.
-* `to_user_id` — New property. This will be set to the user's BSUID.
+* `contacts`  A new contacts object will be included.
+* `name`  New property. This will be set to the user's profile name.
+* `country_code`  New property. This will be set to the user's country code (*subject to change*).
+* `user_id`  New property. This will be set to the user's BSUID.
+* `to`  New empty value. This will be set to the WhatsApp user's phone number if the user has adopted a username and (1) the message was sent to their phone number, (2) your business phone number is already in the user's WhatsApp contacts list, or (3) you have messaged or called their phone number within the last 30 days. Otherwise, it will be set to an empty string.
+* `to_user_id`  New property. This will be set to the user's BSUID.
 
 ### User-initiated connected calls webhooks
 
@@ -1354,13 +1212,13 @@ These changes will apply to user-initiated [connected calls](/docs/whatsapp/clou
 }
 ```
 
-* `from` — New empty value. If the user has adopted a username, it will be set to an empty string if (1) you haven't messaged or called the user's phone number in the last 30 days or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `from_user_id` — New property. Will be set to the user's BSUID.
-* `wa_id` — New empty value. If the user has adopted a username, it will be set to an empty string if (1) you haven't messaged or called the user's phone number in the last 30 days or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `name` — New property. Will be set to the user's profile name.
-* `username` — New property. If the user has adopted a username, it will be set to the user's username. Otherwise, the property will be omitted.
-* `country_code` — New property. Will be set to the user's country code (*subject to change*).
-* `user_id` — New property. Will be set to the user's BSUID.
+* `from`  New empty value. If the user has adopted a username, it will be set to an empty string if (1) you haven't messaged or called the user's phone number in the last 30 days or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `from_user_id`  New property. Will be set to the user's BSUID.
+* `wa_id`  New empty value. If the user has adopted a username, it will be set to an empty string if (1) you haven't messaged or called the user's phone number in the last 30 days or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `name`  New property. Will be set to the user's profile name.
+* `username`  New property. If the user has adopted a username, it will be set to the user's username. Otherwise, the property will be omitted.
+* `country_code`  New property. Will be set to the user's country code (*subject to change*).
+* `user_id`  New property. Will be set to the user's BSUID.
 
 ### Business-initiated terminated calls webhooks
 
@@ -1412,12 +1270,12 @@ These changes apply to business-initiated [terminated calls](/docs/whatsapp/clou
 }
 ```
 
-* `to` — New empty value. This will be set to the WhatsApp user's phone number if the user has adopted a username and (1) the call was made to their phone number, (2) your business phone number is already in the user's WhatsApp contacts list, or (3) you have messaged or called their phone number within the last 30 days. Otherwise, it will be set to an empty string.
-* `to_user_id` — New property. This will be set to the user's BSUID.
-* `contacts` — A new contacts object will be included.
-* `name` — New property. This will be set to the user's profile name.
-* `country_code` — New property. This will be set to the user's country code (*subject to change*).
-* `user_id` — New property. This will be set to the user's BSUID.
+* `to`  New empty value. This will be set to the WhatsApp user's phone number if the user has adopted a username and (1) the call was made to their phone number, (2) your business phone number is already in the user's WhatsApp contacts list, or (3) you have messaged or called their phone number within the last 30 days. Otherwise, it will be set to an empty string.
+* `to_user_id`  New property. This will be set to the user's BSUID.
+* `contacts`  A new contacts object will be included.
+* `name`  New property. This will be set to the user's profile name.
+* `country_code`  New property. This will be set to the user's country code (*subject to change*).
+* `user_id`  New property. This will be set to the user's BSUID.
 
 ### User-initiated terminated calls webhooks
 
@@ -1472,12 +1330,12 @@ These changes will apply to user-initiated [terminated calls](/docs/whatsapp/clo
 }
 ```
 
-* `from` — New empty value. This will be empty if the user has adopted a username and (1) your business phone number is not in the user's WhatsApp contacts list and (2) you have not messaged or called their phone number within the last 30 days. Otherwise, it will be set to the user's phone number.
-* `from_user_id` — New property. This will be set to the user's BSUID.
-* `wa_id` — New empty value. This will be empty if the user has adopted a username and (1) your business phone number is not in the user's WhatsApp contacts list and (2) you have not messaged or called their phone number within the last 30 days. Otherwise, it will be set to the user's phone number.
-* `name` — New property. This will be set to the user's profile name.
-* `country_code` — New property. This will be set to the user's country code (*subject to change*).
-* `user_id` — New property. This will be set to the user's BSUID.
+* `from`  New empty value. This will be empty if the user has adopted a username and (1) your business phone number is not in the user's WhatsApp contacts list and (2) you have not messaged or called their phone number within the last 30 days. Otherwise, it will be set to the user's phone number.
+* `from_user_id`  New property. This will be set to the user's BSUID.
+* `wa_id`  New empty value. This will be empty if the user has adopted a username and (1) your business phone number is not in the user's WhatsApp contacts list and (2) you have not messaged or called their phone number within the last 30 days. Otherwise, it will be set to the user's phone number.
+* `name`  New property. This will be set to the user's profile name.
+* `country_code`  New property. This will be set to the user's country code (*subject to change*).
+* `user_id`  New property. This will be set to the user's BSUID.
 
 ### Business-initiated calls status webhooks
 
@@ -1526,12 +1384,12 @@ These changes will apply to business-initiated [calls status](/docs/whatsapp/clo
 }
 ```
 
-* `recipient_id` — New empty value. This will be set to an empty string if the WhatsApp user has adopted a username and (1) the call was made to their BSUID, (2) your business phone number is not in the user's WhatsApp contacts list, and (3) you have not messaged or called their phone number within the last 30 days. Otherwise, it will be set to the user's phone number.
-* `recipient_user_id` — New property. This will be set to the user's BSUID.
-* `contacts` — A new contacts array will be included.
-* `name` — New property. This will be set to the user's profile name.
-* `country_code` — New property. This will be set to the user's country code (*subject to change*).
-* `user_id` — New property. This will be set to the user's BSUID.
+* `recipient_id`  New empty value. This will be set to an empty string if the WhatsApp user has adopted a username and (1) the call was made to their BSUID, (2) your business phone number is not in the user's WhatsApp contacts list, and (3) you have not messaged or called their phone number within the last 30 days. Otherwise, it will be set to the user's phone number.
+* `recipient_user_id`  New property. This will be set to the user's BSUID.
+* `contacts`  A new contacts array will be included.
+* `name`  New property. This will be set to the user's profile name.
+* `country_code`  New property. This will be set to the user's country code (*subject to change*).
+* `user_id`  New property. This will be set to the user's BSUID.
 
 ### SIP invites for business-initiated calls
 
@@ -1572,7 +1430,7 @@ Content-Length:  2427
 <!-- SDP omitted for brevity -->
 ```
 
-* `BSUID` — Will be the user's BSUID if the call was made to the user's BSUID, or the user's phone number if sent to their phone number.
+* `BSUID`  Will be the user's BSUID if the call was made to the user's BSUID, or the user's phone number if sent to their phone number.
 
 ### SIP invites for user-initiated calls
 
@@ -1612,9 +1470,9 @@ Content-Length: 1028
 <!-- SDP omitted for brevity -->
 ```
 
-* `BSUID` — Will be the user's BSUID if the call was made to the user's BSUID, or if the user has adopted a username and (1) you haven't messaged or called the user's phone number in the last 30 days, or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be the user's phone number.
-* `USERNAME` — Will be the user's username.
-* `USER_COUNTRY_CODE` — Will be the user's country code (*subject to change*).
+* `BSUID`  Will be the user's BSUID if the call was made to the user's BSUID, or if the user has adopted a username and (1) you haven't messaged or called the user's phone number in the last 30 days, or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be the user's phone number.
+* `USERNAME`  Will be the user's username.
+* `USER_COUNTRY_CODE`  Will be the user's country code (*subject to change*).
 
 ### SIP OK responses for business-initiated calls
 
@@ -1654,9 +1512,9 @@ Content-Length:   645
 <!-- SDP omitted for brevity -->
 ```
 
-* `BSUID` — Will be the user's BSUID if the call was made to the user's BSUID, or if the user has adopted a username and (1) you haven't messaged or called the user's phone number in the last 30 days, or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be the user's phone number.
-* `USERNAME` — Will be the user's username.
-* `USER_COUNTRY_CODE` — Will be the user's country code (*subject to change*).
+* `BSUID`  Will be the user's BSUID if the call was made to the user's BSUID, or if the user has adopted a username and (1) you haven't messaged or called the user's phone number in the last 30 days, or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be the user's phone number.
+* `USERNAME`  Will be the user's username.
+* `USER_COUNTRY_CODE`  Will be the user's country code (*subject to change*).
 
 ### SIP BYE responses for business- and user-initiated calls
 
@@ -1689,9 +1547,9 @@ User-Agent: Facebook SipGateway
 Content-Length:  0
 ```
 
-* `BSUID` — Will be the user's BSUID if the call was made to the user's BSUID, or if the user has adopted a username and (1) you haven't messaged or called the user's phone number in the last 30 days, or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be the user's phone number.
-* `USERNAME` — Will be the user's username.
-* `USER_COUNTRY_CODE` — Will be the user's country code (*subject to change*).
+* `BSUID`  Will be the user's BSUID if the call was made to the user's BSUID, or if the user has adopted a username and (1) you haven't messaged or called the user's phone number in the last 30 days, or (2) your business phone number is not in the user's WhatsApp contacts list. Otherwise, it will be the user's phone number.
+* `USERNAME`  Will be the user's username.
+* `USER_COUNTRY_CODE`  Will be the user's country code (*subject to change*).
 
 ## Coexistence
 
@@ -1762,14 +1620,14 @@ These changes will apply to [history](/docs/whatsapp/cloud-api/webhooks/referenc
 }
 ```
 
-* `id` — New empty value. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `context` — A new context object will be included.
-* `wa_id` — New property. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `user_id` — New property. Will be set to the user's BSUID.
-* `username` — New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
-* `country_code` — New property. Will be set to the user's country code (\_subject to change).
-* `from` — New empty value. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `from_user_id` — New property. Will be set to the user's BSUID.
+* `id`  New empty value. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `context`  A new context object will be included.
+* `wa_id`  New property. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `user_id`  New property. Will be set to the user's BSUID.
+* `username`  New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
+* `country_code`  New property. Will be set to the user's country code (\_subject to change).
+* `from`  New empty value. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `from_user_id`  New property. Will be set to the user's BSUID.
 
 These changes will apply to [history](/docs/whatsapp/cloud-api/webhooks/reference/history) webhooks that describe a media asset sent from a WhatsApp user to a business customer, or vice-versa.
 
@@ -1836,14 +1694,14 @@ These changes will apply to [history](/docs/whatsapp/cloud-api/webhooks/referenc
 }
 ```
 
-* `contacts` — A new contacts object will be included.
-* `username` — New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
-* `country_code` — New property. Will be set to the user's country code (*subject to change*).
-* `wa_id` — New property. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `user_id` — New property. Will be set to the user's BSUID.
-* `from_user_id` — New property. Will be set to the user's BSUID.
-* `to` — New empty value. Will be an empty string if, at the time when the business sent the message to the user, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `to_user_id` — New property. Will be set to the user's BSUID.
+* `contacts`  A new contacts object will be included.
+* `username`  New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
+* `country_code`  New property. Will be set to the user's country code (*subject to change*).
+* `wa_id`  New property. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `user_id`  New property. Will be set to the user's BSUID.
+* `from_user_id`  New property. Will be set to the user's BSUID.
+* `to`  New empty value. Will be an empty string if, at the time when the business sent the message to the user, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `to_user_id`  New property. Will be set to the user's BSUID.
 
 ### smb\_message\_echoes webhooks
 
@@ -1895,13 +1753,13 @@ These changes will apply to [smb\_message\_echoes](/docs/whatsapp/cloud-api/webh
 }
 ```
 
-* `contacts` — A new contacts object will be included.
-* `username` — New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
-* `country_code` — New property. Will be set to the user's country code (*subject to change*).
-* `wa_id` — New property. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `user_id` — New property. Will be set to the user's BSUID.
-* `to` — New empty value. Will be an empty string if, at the time when the business sent the message to the user, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `to_user_id` — New property. Will be set to the user's BSUID.
+* `contacts`  A new contacts object will be included.
+* `username`  New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
+* `country_code`  New property. Will be set to the user's country code (*subject to change*).
+* `wa_id`  New property. Will be an empty string if, at the time when the user sent the message to the business customer, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `user_id`  New property. Will be set to the user's BSUID.
+* `to`  New empty value. Will be an empty string if, at the time when the business sent the message to the user, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of when the message was sent, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `to_user_id`  New property. Will be set to the user's BSUID.
 
 ### smb\_app\_state\_sync webhooks
 
@@ -1948,10 +1806,10 @@ These changes will apply to [smb\_app\_state\_sync](/docs/whatsapp/cloud-api/web
 }
 ```
 
-* `phone_number` — New empty value. Will be an empty string if, at the time of the synchronization request, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of the synchronization request, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
-* `user_id` — New property. Will be set to the user's BSUID.
-* `username` — New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
-* `country_code` — New property. Will be set to the user's country code (*subject to change*).
+* `phone_number`  New empty value. Will be an empty string if, at the time of the synchronization request, (1) the user had already enabled usernames, (2) the business customer had not messaged the user's phone number within 30 days of the synchronization request, and (3) the business customer's business phone number was not in the user's WhatsApp contacts list. Otherwise, it will be set to the user's phone number.
+* `user_id`  New property. Will be set to the user's BSUID.
+* `username`  New property. Will be set to the user's username, if the user has enabled the username feature. Property omitted if the user has disabled the username feature.
+* `country_code`  New property. Will be set to the user's country code (*subject to change*).
 
 ## Analytics
 
@@ -1979,13 +1837,13 @@ When a user adopts a username, they will have phone number privacy meaning their
 
 If a user has not adopted usernames, you will receive both their phone number and their BSUID.
 
-We will continue to share the phone number in a few cases, primarily for existing customer interactions. We’ll automatically include or return the user’s phone number on a rolling 30 days after any interaction between you and the user’s phone number, or if your business phone number is in the user's WhatsApp contacts list.
+We will continue to share the phone number in a few cases, primarily for existing customer interactions. Well automatically include or return the users phone number on a rolling 30 days after any interaction between you and the users phone number, or if your business phone number is in the user's WhatsApp contacts list.
 
 Per our Cloud API Terms of Service, however, phone numbers and related data are retained for a maximum of 30 days to support features like message redelivery. There may be situations where you receive messages from existing users outside of this 30 day window, which may look like a new user thread to you. Therefore, it is essential that you begin supporting BSUIDs as soon as possible, to minimize losing any conversation context.
 
 **Why do partners and directly-integrated businesses using the Cloud API, including directly integrated ads that click to WhatsApp advertisers, have to adopt BSUID?**
 
-Partners and businesses must adopt BSUID to continue processing incoming messages from WhatsApp username adopters. Once BSUID is adopted and user messages from username adopters are processed, message webhooks will no longer include phone numbers in some cases as part of the webhook such as wa\_id, so partners and businesses must ensure all connected systems can handle BSUID. They will also be able to ask for a user’s phone number in-thread.
+Partners and businesses must adopt BSUID to continue processing incoming messages from WhatsApp username adopters. Once BSUID is adopted and user messages from username adopters are processed, message webhooks will no longer include phone numbers in some cases as part of the webhook such as wa\_id, so partners and businesses must ensure all connected systems can handle BSUID. They will also be able to ask for a users phone number in-thread.
 
 **If a business has not yet adopted BSUID and starts to receive messages from username adopters which they cannot process, will there be any recourse or corrective action?**
 
@@ -1996,177 +1854,10 @@ If a business has not yet adopted BSUID and is not able to process messages from
 
 **How do business usernames differ from display names? When will a user see a business username vs a display name?**
 
-Business usernames will provide an ability for the users to reach the business by the business’ username, meaning an end user can search for a business username using their exact username and reach out to the businesses. Since end users cannot search by display names, business usernames offer a clear advantage as a searchable and unique identifier for users to reliably find the correct business.
+Business usernames will provide an ability for the users to reach the business by the business username, meaning an end user can search for a business username using their exact username and reach out to the businesses. Since end users cannot search by display names, business usernames offer a clear advantage as a searchable and unique identifier for users to reliably find the correct business.
 
 Business usernames must follow specific formatting rules on length and allowed characters, while display names have some more leeway in terms of formatting.
 
-Business usernames are unique and are tied 1-1 to phone numbers, meaning @JaspersMarket would be tied to one phone number while @JaspersMarketCustomerSupport would be tied to another phone number. Display names are not tied 1-1 to phone numbers, meaning the display name Jasper’s Market can have 10 phone numbers under this display name.
+Business usernames are unique and are tied 1-1 to phone numbers, meaning @JaspersMarket would be tied to one phone number while @JaspersMarketCustomerSupport would be tied to another phone number. Display names are not tied 1-1 to phone numbers, meaning the display name Jaspers Market can have 10 phone numbers under this display name.
 
 When a business has both a username and display name, display name will be shown first (e.g., in Profile, Chat list, Messages, etc), for the businesses to build trust with the users and for users to recognize the business when business reaches out to the user.
-
-![](https://www.facebook.com/tr?id=675141479195042&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=574561515946252&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=1754628768090156&ev=PageView&noscript=1)
-
-Nesta Página
-
-[Business-scoped user IDs](#business-scoped-user-ids)
-
-[User usernames](#user-usernames)
-
-[Business-scoped user ID](#business-scoped-user-id)
-
-[Phone numbers](#phone-numbers)
-
-[Country codes](#country-codes)
-
-[Business usernames](#business-usernames)
-
-[Reserved usernames](#reserved-usernames)
-
-[Chat window display priority](#chat-window-display-priority)
-
-[Support](#support)
-
-[Adopt or change a business username](#adopt-or-change-a-business-username)
-
-[Get current username](#get-current-username)
-
-[Get reserved usernames](#get-reserved-usernames)
-
-[Delete a username](#delete-a-username)
-
-[Response syntax:](#response-syntax-)
-
-[Cancel pending username request](#cancel-pending-username-request)
-
-[phone\_number\_username\_update webhook](#phone-number-username-update-webhook)
-
-[Messages](#messages)
-
-[Send message requests](#send-message-requests)
-
-[Send message response](#send-message-response)
-
-[Error codes](#error-codes)
-
-[Marketing Messages API for WhatsApp](#marketing-messages-api-for-whatsapp)
-
-[Send marketing message requests](#send-marketing-message-requests)
-
-[Send marketing message response](#send-marketing-message-response)
-
-[Messages webhooks](#messages-webhooks)
-
-[Status messages webhooks](#status-messages-webhooks)
-
-[Incoming messages webhooks](#incoming-messages-webhooks)
-
-[System status messages webhooks](#system-status-messages-webhooks)
-
-[User\_preferences webhooks](#user-preferences-webhooks)
-
-[Groups API](#groups-api)
-
-[Get group info](#get-group-info)
-
-[Get group join requests](#get-group-join-requests)
-
-[Remove group participants](#remove-group-participants)
-
-[Groups API webhooks](#groups-api-webhooks)
-
-[group\_participants\_update webhooks](#group-participants-update-webhooks)
-
-[Blosk Users API](#blosk-users-api)
-
-[Block or unblock user requests](#block-or-unblock-user-requests)
-
-[Calling API](#calling-api)
-
-[Businesses-initiated call requests](#businesses-initiated-call-requests)
-
-[Get call permissions](#get-call-permissions)
-
-[Send call permission request](#send-call-permission-request)
-
-[Call permission request webhooks](#call-permission-request-webhooks)
-
-[Business-initiated connected calls webhooks](#business-initiated-connected-calls-webhooks)
-
-[User-initiated connected calls webhooks](#user-initiated-connected-calls-webhooks)
-
-[Business-initiated terminated calls webhooks](#business-initiated-terminated-calls-webhooks)
-
-[User-initiated terminated calls webhooks](#user-initiated-terminated-calls-webhooks)
-
-[Business-initiated calls status webhooks](#business-initiated-calls-status-webhooks)
-
-[SIP invites for business-initiated calls](#sip-invites-for-business-initiated-calls)
-
-[SIP invites for user-initiated calls](#sip-invites-for-user-initiated-calls)
-
-[SIP OK responses for business-initiated calls](#sip-ok-responses-for-business-initiated-calls)
-
-[SIP BYE responses for business- and user-initiated calls](#sip-bye-responses-for-business--and-user-initiated-calls)
-
-[Coexistence](#coexistence)
-
-[History webhooks](#history-webhooks)
-
-[smb\_message\_echoes webhooks](#smb-message-echoes-webhooks)
-
-[smb\_app\_state\_sync webhooks](#smb-app-state-sync-webhooks)
-
-[Analytics](#analytics)
-
-[Billing and invoicing](#billing-and-invoicing)
-
-[FAQs](#faqs)
-
----
-
-![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/459257729_1010347667767763_3581566724399163588_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=8mhMcpIjeBkQ7kNvwHTryHJ&_nc_oc=Admy7GpnqwRB2yrV0K26R1ruyRzbFEMRIIBbpRk3E9Zarv1fHentEg_yHWtQS2xgIBg&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_AfhY3tsdNHy2QZhjc33OjXVPTW3lEpx7aAs12ogQTZuRbA&oe=6940632C)
-
-* [![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/459306853_1501629487899251_7449019458089488547_n.png?stp=dst-webp&_nc_cat=107&ccb=1-7&_nc_sid=e280be&_nc_ohc=G9HoN6clJj0Q7kNvwH57swG&_nc_oc=AdmAqBAGvpcpumYIfT0h6rR9U77Nz_vmeCCTFGNh9aLARTf2sdGzPrcUJq_WrE7YRK4&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_Afht6wnCaDB7YeHuvmqs9YPQUFW8gwm1_qYpkG25TWhzPA&oe=694046E2)](https://www.facebook.com/MetaforDevelopers)[![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/458971466_433154499741175_6962021715663093697_n.png?stp=dst-webp&_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=Da_uV3THaUoQ7kNvwElAVdy&_nc_oc=Adl4CfQs2tjJaJxxfKSdK1GytHHQDxZiA0SzUTnMpu0RCc5ZzXbl-owuYi0BHtN3HwM&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_Afj3bBlUnWBX41aVEqe-VXxGng6P5wV79P9a9zqT-SghRg&oe=6940434E)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT3DhuG4KTXS3OaIUpXyFJ3bcaSIfbYNIsYj6i8_EztaoZ3yrgq1i0aDawjEqa03iQdcw8RIA3g-BlQyMB86rjw1TMcxkp5sAILg0hlxZ1dUa5PoNTO-cu8Dd8IN9Yq0gUA585JY8aFCpfOSB5uhQg)[![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/459160202_540178488525397_747089945616031028_n.png?stp=dst-webp&_nc_cat=104&ccb=1-7&_nc_sid=e280be&_nc_ohc=xMk3wRUIgeUQ7kNvwFyVchK&_nc_oc=Adn24jR9avCJri9rb4xV6WHOmSE2xAabhA5SPU9df_1bQBXH841bb0qD0tklwIM7Ta0&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_AfjCtSUlJ1A06V3otwkFoPZRsLv0nlKgfSc0IaKeU0qBRw&oe=69406A98)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT3i_GyX5BcVg8j_6WoTc7gjf5alkKDnYZBPMXnr-6JwbvVxh5z3pgvVlNiRPdVJU-20wZeGjBjePg_p7vA9UXIYQVwuPPpoBFEwRmdBZhCt28FKDn21UaBYApEd6_uPi3ottNw6GdU4Tk20Lgdk8Q)[![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/458754681_1046279956748647_3773356972584952025_n.png?stp=dst-webp&_nc_cat=103&ccb=1-7&_nc_sid=e280be&_nc_ohc=g67ScHV0LcEQ7kNvwG2RjRe&_nc_oc=Adlnyq_S62cXawdO_hSxzSAlCrv3ynvKQZDhvtZQFNaWhW_nD48_6gV_GK1r1LDCpsk&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_AfiR7OzpPA0DBSpd0_Qmyk4oDfYb8F4_AG01RdosfwmEPQ&oe=694048AC)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT0ZTboGJ52WVnhX736N_aTRkcKt2jUjYXy5Kou8fRGIOGjxwrHaeMNQbh-FFeQQEtm4nRMUmmHv-PmDkQ5BB8GhgvzU1bOqxHmtXbHQuxVNvPvLzHyDOqZyHuV7xGuTS0dIA31ygrmJh8cvASLzTw)[![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/459342489_501198322668453_7712071717227028092_n.png?stp=dst-webp&_nc_cat=109&ccb=1-7&_nc_sid=e280be&_nc_ohc=PKQzoyB_GWYQ7kNvwEguXQl&_nc_oc=AdmDmwQKNjLIRoko1ZMTYMX6KY4m5nEXZFxVWUblwV08Zse4xdDoyq9pQ4nrrw6KzYM&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_Afh6srsyKI36No8uyixCKvwB2SdWzsu9KyR6heMCtU5DdA&oe=69406E30)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT3DmQO6tdY9ZbSpCFnlpaQFqs0uvmF9JfdMwb4cQa4SkOUm6XoIoJlO6jdqFfg1Em7iL-NIPIczxX8gEnrU8VsFgrhoGoY4BqwY7VNCJTDKp3gKx2gc-DmALZQ3WE5pH7KBiTBKgwGjzkreBzFjew)
-
-#### Desenvolva com a Meta
-
-* [IA](https://developers.meta.com/ai/)
-* [Meta Horizon OS](https://developers.meta.com/horizon/)
-* [Tecnologias sociais](/social-technologies/)
-* [Dispositivos vestíveis](https://l.facebook.com/l.php?u=https%3A%2F%2Fdeveloper.meta.com%2Fwearables%2F&h=AT0vbghVsBdu2Z8ZJt8BcZmNVhD2Nd64TgCj5lgd-GI82oe-wwxPL8ajV3S_RxNVpnhM6-ePUrc60k8W9enR8mcayn64VzZOHIG34GA_PXxO-u0I1dw6r5d1ma4fvJQvLjX-_zJ7FWdWUQrznNhzqg)
-
-#### Notícias
-
-* [Meta for Developers](https://developers.meta.com/blog/)
-* [Blog](/blog/)
-* [Casos de sucesso](/success-stories/)
-
-#### Suporte
-
-* [Suporte ao desenvolvedor](/support/)
-* [Ferramenta de bug](/support/bugs/)
-* [Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT3h7HvOcr0WlCrcPBbiInXw-iGdWV-ctNy30ZLxCFaSGbRrycIKKFVFlvAmkNKzdzoP9OafoeHzlD4A4DxMASTp_ySbPC0gOsKq-PVcNsCRcJWgZdJurb_cFy71RtINGEQSmbN8c-nthtLcn-ZIlQ)
-* [Fórum da comunidade de desenvolvedores![](https://static.xx.fbcdn.net/rsrc.php/v4/yE/r/3AaI47RuuWt.png)](https://www.facebook.com/groups/fbdevelopers/)
-* [Relatar um incidente](/incident/report/)
-
-#### Termos e políticas
-
-* [Iniciativas da plataforma responsável](/products/responsible-platform-initiatives/)
-* [Termos da plataforma](/terms/)
-* [Políticas do Desenvolvedor](/devpolicy/)
-
-Siga-nos
-
-* [![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/89126182_222315695571651_4936319991919149056_n.svg?_nc_cat=109&ccb=1-7&_nc_sid=e280be&_nc_ohc=jVaAdZR-cusQ7kNvwGUWsXR&_nc_oc=AdnkdIwdyYL2p27S4pcMUluaDHncOtxukTwj8FqfTZknw4_XgIgh5cPl-QzSzp7OMCU&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_AfimBdyPj5d5pPiGHuNScfG1wxA-4tXbORxiPvugCBZ5dg&oe=694042EF)](https://www.facebook.com/MetaforDevelopers)[![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/89319900_506382610280628_2520212398984396800_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=866JCMN-YaAQ7kNvwGsDBGI&_nc_oc=AdlWVflpA2urZdS4m87QYejj6r6uaqiXFWCIwPFWxzloM-2y0q6m688lRdiYSkdwh1A&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_AfjBprvbpRs_E3Mu8juLga0AxdGECdW0aKIF92ZhOgOHWg&oe=69404E75)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT0hJ_79pPvUQjU9FjZRCUfVbYlKId3o9OEoqKx3yRSDkbyOijS-IlAN3uKleOOFca0g-ulcI3bUBE9LigwiXGGQUoDJFHou3BHFgjhOZVuMw6JcksQ6RbJwAYdD2Nv_FswnbIfnJ_QZodkuzsOK1Q)[![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/89154638_493934268150363_1123534170136510464_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=lAaTViSW3NMQ7kNvwHRipk7&_nc_oc=Adli-wVDrkDQa22mpmVUODQn1mXIqV_zQB6dKGNYV6RBgcwlDqcyn7qOYPrYym0QVGA&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_AfgoNmF5dRFSfmSWYNuCt35E8dNnqJ2USB9jZHYpSZ4VKw&oe=69406085)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT38eRZk1H6atU9SjIFTfYiOCz1Sjd4s32D2PfoA_dEK-QW1W-wqIy8MIbcvgUUYwaRVxhlV203rlEK-l6rtQW-Jf4TMiRWrH52DYWcSREudJqfKrn2mNTCtOYqv7DHUPSEzVFfc3j1pdGvQ5SRGLw)[![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/89354779_640044533453459_7031092369583767552_n.svg?_nc_cat=108&ccb=1-7&_nc_sid=e280be&_nc_ohc=YUHZv44W0BEQ7kNvwFhV88c&_nc_oc=Adnm-v0eNCQgUTK7hMvDLYzhR3P3rpgTrg1sZ0rUtSnxNTsGDsCGP0_GKhQS1oTO-RQ&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_Afi4LOUQO9tU-vvxKkLCCStpuuK62hydCnZLrNtEQ51C_A&oe=694051C6)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT3YCknW1OyvjdWIUGeGV-epi0Y4l_x5ShWgEftIm6_ol7zvusozzKxFebGNqGByvxnyOKwD1uHVKUhNkrBDM6tDvCG6W9RM8fA32WqorZ3akf2G_VzpTNEnA-F4IipH8MOJ62Fjs_jvLAoVGHK99A)[![](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/89127358_532616317687233_292625476315250688_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=4eJmFx9fWJ0Q7kNvwFs0vVn&_nc_oc=AdnlQJBeilJ3nDjXi0hSw3jetsPF4W8H4GBJfUXEEu0uulgD2OpFpaRd65VlX_SOGeg&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=WIGLIE-_NExMJWFBTwdZqw&oh=00_AfgKPTh6GuXwnyKR4inbTCYlU-H61fY12lwlO7YrsQUyRQ&oe=69403994)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT3h-wDC74rvoxjNG9UJMi6NHY5Ipj74-ta93vgH0jT-2ks470BmWD1h1MGjowm7pAAR4e0SLMyMSldoRWUexZ1pYfs8yqxJ3jKm_KqvSexoGbOWXVjAYH0OSLNMlvlzCvDl1bw7HiQiESStuKlxdw)
-
-© 2025 Meta
-
-* [Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT39raBvhMng8fV4uC2jMO_yO6gSuQhOnhK9-9XtfoZDts82V9P2okbwgDe21GbDtgyoovP8ViANuPhPqKYfOXlQs1ZX4Q7PWjC-49ypov9AIjM4I5dDvjmfpE1BvbB1xNyVFcVrCbqtXnB2eF4KDQ)
-* [Carreiras](https://www.facebook.com/careers)
-* [Política de Privacidade](https://www.facebook.com/about/privacy)
-* [Cookies](https://www.facebook.com/help/cookies)
-* [Termos](https://www.facebook.com/policies)
-
-Português (Brasil)Bahasa IndonesiaDeutschEnglish (US)EspañolEspañol (España)Français (France)ItalianoTiếng ViệtРусскийالعربيةภาษาไทย한국어中文(香港)中文(台灣)中文(简体)日本語
-
-Português (Brasil)

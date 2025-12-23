@@ -1,62 +1,11 @@
-![](https://facebook.com/security/hsts-pixel.gif)
-
-[![](/images/developer/m4d_logo_july_2024.svg)](/?no_redirect=1)
-
-[Documentos](/docs/)[Ferramentas](/tools/)[Suporte](/support/)[Entrar](https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fwhatsapp%2Fmarketing-messages-api-for-whatsapp%2Fonboarding%3Fnav_ref%3Dbiz_unified_f3_login_page_to_dfc&login_options%5B0%5D=FB&login_options%5B1%5D=SSO&app=436761779744620&is_work_accounts=1&config_ref=biz_login_tool_flavor_dfc)
-
-[Documentos](/docs/)[Marketing Messages API for WhatsApp](/docs/whatsapp/marketing-messages-api-for-whatsapp)[Guides](/docs/whatsapp/marketing-messages-api-for-whatsapp/guides)[Onboarding](/docs/whatsapp/marketing-messages-api-for-whatsapp/onboarding)
-
-[Marketing Messages API for WhatsApp](/docs/whatsapp/marketing-messages-api-for-whatsapp)
-
-* [Get started](/docs/whatsapp/marketing-messages-api-for-whatsapp/get-started)
-* [Guides](/docs/whatsapp/marketing-messages-api-for-whatsapp/guides)
-
-  + [Onboarding](/docs/whatsapp/marketing-messages-api-for-whatsapp/onboarding)
-  + [Sending messages](/docs/whatsapp/marketing-messages-api-for-whatsapp/sending-messages)
-  + [Measuring conversion](/docs/whatsapp/marketing-messages-api-for-whatsapp/measuring-conversion)
-  + [Tracking click events](/docs/whatsapp/marketing-messages-api-for-whatsapp/guides/tracking-click-events)
-  + [Viewing metrics](/docs/whatsapp/marketing-messages-api-for-whatsapp/viewing-metrics)
-  + [Deep links](/docs/whatsapp/marketing-messages-api-for-whatsapp/guides/deep-links)
-* [Features](/docs/whatsapp/marketing-messages-api-for-whatsapp/features)
-* [Onboard business customers](/docs/whatsapp/marketing-messages-api-for-whatsapp/onboard-business-customers)
-* [Pricing](/docs/whatsapp/marketing-messages-api-for-whatsapp/mm-api-pricing)
-* [Support](/docs/whatsapp/marketing-messages-api-for-whatsapp/support)
-* [Changelog](/docs/whatsapp/marketing-messages-api-for-whatsapp/changelog)
-
-Nesta Página
-
-[Onboarding](#onboarding)
-
-[Eligibility requirements](#eligibility-requirements)
-
-[Check WABA onboarding status and eligibility](#check-waba-onboarding-status-and-eligibility)
-
-[Checking eligibility status (alternative)](#checking-eligibility-status--alternative-)
-
-[If you want to check ToS and intent request status for the business manager](#if-you-want-to-check-tos-and-intent-request-status-for-the-business-manager)
-
-[Register a phone number on Cloud API](#register-a-phone-number-on-cloud-api)
-
-[For solution providers](#for-solution-providers)
-
-[Onboarding business customers](#onboarding-business-customers)
-
-[For business customers without a partner](#for-business-customers-without-a-partner)
-
-[Sharing event activity](#sharing-event-activity)
-
-[Manage via WhatsApp Account settings](#manage-via-whatsapp-account-settings)
-
-[Configure via API](#configure-via-api)
-
-[Request syntax](#request-syntax)
-
-[Receive MM API for WhatsApp Terms of Service signed webhook (Preferred)](#receive-mm-api-for-whatsapp-terms-of-service-signed-webhook--preferred-)
-
-[Receive onboarding completion webhook (Legacy)](#receive-onboarding-completion-webhook--legacy-)
-
-Marketing Messages API for WhatsApp (formerly known as Marketing Messages Lite API) is now generally available.
-
++++
+id = "onboarding"
+title = "Onboarding"
+summary = "Onboarding to the Marketing Messages API for WhatsApp (MM API for WhatsApp) is a low-effort upgrade to sending marketing messages with optimizations on Cloud API."
+source = "https://developers.facebook.com/docs/whatsapp/onboarding"
+lang = "en"
+tags = ["whatsapp-business-platform", "cloud-api", "webhooks", "phone-numbers", "compliance"]
++++
 # Onboarding
 
 Onboarding to the Marketing Messages API for WhatsApp (MM API for WhatsApp) is a low-effort upgrade to sending marketing messages with optimizations on Cloud API. See the directions below to onboard your business, whether you integrate with the API directly or work with a partner.
@@ -65,7 +14,7 @@ When a business registers for the MM API for WhatsApp, read-only Ad accounts are
 
 These linked accounts allow a business to:
 
-* fetch their MM API for WhatsApp insights from the Marketing API “Insights API” to view the same
+* fetch their MM API for WhatsApp insights from the Marketing API Insights API to view the same
 
 These read-only ad accounts are kept in sync with any changes to marketing templates, so that any changes to marketing templates are reflected in the linked ad entity.
 
@@ -241,17 +190,15 @@ Reproduzir
 
 Silenciar
 
-Configurações visuais adicionais
+Configuracoes visuais adicionais
 
 Entrar em modo de tela cheia
 
-Opções de compartilhamento e relatórios
-
-![](https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif)
+Opcoes de compartilhamento e relatorios
 
 Ocorreu um erro
 
-Estamos tendo problemas ao reproduzir este vídeo.
+Estamos tendo problemas ao reproduzir este video.
 
 [Saiba mais](https://www.facebook.com/help/396404120401278/list)
 
@@ -269,19 +216,15 @@ If your business directly integrates with Cloud API without a partner, follow th
 
 * Navigate to the **[App Dashboard](/apps)** > **WhatsApp** > **Quickstart** panel.
 * On the **Quickstart** page, locate the "Improve ROI with Marketing Messages API for WhatsApp" card and click the "Get started" button.
-* Click on “Continue to integration guide” to accept the Terms of Service
-
-![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/476020445_3647418092312679_4465719704295641193_n.png?_nc_cat=110&ccb=1-7&_nc_sid=e280be&_nc_ohc=3FAGqB7x4r0Q7kNvwF6WRMt&_nc_oc=AdlZi4-zSsSsty2fo9CDm1W76T6JIVSCh_Y3iENaH6WWjA4shIQFp1fCBaOacTnEppk&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=74A0r9hhBXVzh850pjiwoQ&oh=00_Afgly4sKQ3OTBE2s2LYEPWqJSV6coP3pbK4mVcpk4wizlw&oe=6940454B)![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/476114538_1636490170408141_5744881403199109308_n.png?_nc_cat=106&ccb=1-7&_nc_sid=e280be&_nc_ohc=w1dUOQwVxNEQ7kNvwGZ3J6l&_nc_oc=Adkyq0syAp3hXo6DuRd3nTyhYS_q-ZX1t6d5spsxFVgEdNWqXSNYd4D3H6MH8z_4L8U&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=74A0r9hhBXVzh850pjiwoQ&oh=00_Afjcn59nBI2b39A38q52u1wI3Vk63dH2XVYuDUyGIZ0GXQ&oe=69406CD1)
+* Click on Continue to integration guide to accept the Terms of Service
 
 ## Sharing event activity
 
-Once your business is onboarded, message status events (delivery status, read, clicked) will automatically be shared with Meta as part of event activity. Meta does not sell your or your subscribers’ data; this data is used solely to optimize the performance of marketing campaigns.
+Once your business is onboarded, message status events (delivery status, read, clicked) will automatically be shared with Meta as part of event activity. Meta does not sell your or your subscribers data; this data is used solely to optimize the performance of marketing campaigns.
 
 ### Manage via WhatsApp Account settings
 
 If you wish to disable sharing event activity, toggle it off via [WhatsApp Business account setting](https://business.facebook.com/latest/settings/whatsapp_account).
-
-![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/532666735_24223328414028742_8881901315029283677_n.png?_nc_cat=103&ccb=1-7&_nc_sid=e280be&_nc_ohc=q7OaQkTwg5sQ7kNvwGQLIoU&_nc_oc=AdlJ8PPzDfB1AZIt3CU0GX0R57eTmlsEluXG1GRUmkg9_0IEUeGSNSzUCMBygGoxUDI&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=74A0r9hhBXVzh850pjiwoQ&oh=00_Afhs-8YqRRcD9uvQfOAxsLvee84dfRkDvXkyD-IaSe0ICQ&oe=694047DC)
 
 ### Configure via API
 
@@ -370,213 +313,3 @@ Important: The `ad_account_linked` webhook event will no longer be fired since p
   ]
 }
 ```
-
-![](https://www.facebook.com/tr?id=675141479195042&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=574561515946252&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=1754628768090156&ev=PageView&noscript=1)
-
-Nesta Página
-
-[Onboarding](#onboarding)
-
-[Eligibility requirements](#eligibility-requirements)
-
-[Check WABA onboarding status and eligibility](#check-waba-onboarding-status-and-eligibility)
-
-[Checking eligibility status (alternative)](#checking-eligibility-status--alternative-)
-
-[If you want to check ToS and intent request status for the business manager](#if-you-want-to-check-tos-and-intent-request-status-for-the-business-manager)
-
-[Register a phone number on Cloud API](#register-a-phone-number-on-cloud-api)
-
-[For solution providers](#for-solution-providers)
-
-[Onboarding business customers](#onboarding-business-customers)
-
-[For business customers without a partner](#for-business-customers-without-a-partner)
-
-[Sharing event activity](#sharing-event-activity)
-
-[Manage via WhatsApp Account settings](#manage-via-whatsapp-account-settings)
-
-[Configure via API](#configure-via-api)
-
-[Request syntax](#request-syntax)
-
-[Receive MM API for WhatsApp Terms of Service signed webhook (Preferred)](#receive-mm-api-for-whatsapp-terms-of-service-signed-webhook--preferred-)
-
-[Receive onboarding completion webhook (Legacy)](#receive-onboarding-completion-webhook--legacy-)
-
----
-
-![Meta](https://static.xx.fbcdn.net/rsrc.php/y9/r/tL_v571NdZ0.svg)
-
-[![Facebook](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/425860105_925920989121941_6933048753023841367_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=TlXg3Yp0zhcQ7kNvwFlHuzj&_nc_oc=Adlth0zZy4oztItVbjww3S27F1gAAHaCOth97fGPhPKdhDYKwlVT8tmCq8SSN8prXs0&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=enzVyas0qSOEIGkkq4snOg&oh=00_AfhfBLPdPFlkuhzdfBHQydVM17QoI41NjMutmMz6kff1_g&oe=692BF1E2)](https://www.facebook.com/MetaforDevelopers)[![Instagram](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/425804778_757649995874129_6917476492193301523_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=9toEBb-pE2cQ7kNvwFNJCB6&_nc_oc=AdlHaJJqU9SjSKjxpIT908b6J1OETLKHPmwa6pzYH463NCg13I4b2rCvxBAcolz_Vhk&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=enzVyas0qSOEIGkkq4snOg&oh=00_Afgy-zNASNHwAPO0u611_bLmNB1Qifo0h4kLzl8EWZrvqQ&oe=692BDBF8)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)[![X](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/426747931_385023204117867_5811151062540225287_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=LrCKBfrXotkQ7kNvwHXJ9-R&_nc_oc=AdmWcwXydGH4fE6_ze9n1TULXTqneYU3K5ygGtaVzyBRBnyw7qb8Og3cZksVt5ToizM&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=enzVyas0qSOEIGkkq4snOg&oh=00_Afi_4gYMHIlI0cdqyBDIING8UHyv2PPAF5zRVBk-QZCwlw&oe=692BFA6A)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)[![LinkedIn](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/467689750_1684384502343829_7561568713040200172_n.svg?_nc_cat=103&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=rvzDMDq8OpYQ7kNvwFpZJjN&_nc_oc=AdlO0K6valAr8yBXuSJtO6iJS0r0g9RzlDBTkzXUhIADbGXGnHLCUefEiPT_tUXMtrY&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=enzVyas0qSOEIGkkq4snOg&oh=00_AfhXLisaui8-32EqfX45QJJmrvNZH-H9pKKBlM11RLTDDA&oe=692BD1BE)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)[![YouTube](https://scontent.fcgb9-1.fna.fbcdn.net/v/t39.2365-6/425519002_724756916408357_7491658959807896355_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=cSxQkBtFWXEQ7kNvwHMlhmF&_nc_oc=Adnl0siywGpWBIefbDUneekkB0PXKN416o7GLrNM6CqMMpaf5WBi3HQd8koViWw8GpI&_nc_zt=14&_nc_ht=scontent.fcgb9-1.fna&_nc_gid=enzVyas0qSOEIGkkq4snOg&oh=00_Afjg3rjeiWpDSLkw8lHLvQIJzj4fY-h3a1dTK9uuHBEtQA&oe=692BF51F)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg) [Tecnologias sociais](/social-technologies/)
-
----
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)[Blog](/blog/)[Casos de sucesso](/success-stories/)
-
----
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)[Ferramenta de bug](/support/bugs/)[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)[Relatar um incidente](/incident/report/)
-
----
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)[Termos da plataforma](/terms/dfc_platform_terms/)[Políticas do Desenvolvedor](/devpolicy/)[Política de Privacidade](https://www.facebook.com/about/privacy)[Cookies](https://www.facebook.com/help/cookies)
-
----
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)[Carreiras](https://www.facebook.com/careers)
-
----
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Tecnologias sociais](/social-technologies/)
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Blog](/blog/)
-
-[Casos de sucesso](/success-stories/)
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)
-
-[Ferramenta de bug](/support/bugs/)
-
-[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
-
-[Relatar um incidente](/incident/report/)
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Carreiras](https://www.facebook.com/careers)
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
-
-[Termos da plataforma](/terms/dfc_platform_terms/)
-
-[Políticas do Desenvolvedor](/devpolicy/)
-
-[Política de Privacidade](https://www.facebook.com/about/privacy)
-
-[Cookies](https://www.facebook.com/help/cookies)
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Tecnologias sociais](/social-technologies/)
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Blog](/blog/)
-
-[Casos de sucesso](/success-stories/)
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)
-
-[Ferramenta de bug](/support/bugs/)
-
-[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
-
-[Relatar um incidente](/incident/report/)
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Carreiras](https://www.facebook.com/careers)
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
-
-[Termos da plataforma](/terms/dfc_platform_terms/)
-
-[Políticas do Desenvolvedor](/devpolicy/)
-
-[Política de Privacidade](https://www.facebook.com/about/privacy)
-
-[Cookies](https://www.facebook.com/help/cookies)
-
-Desenvolva com a Meta
-
-[IA](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Meta Horizon](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Tecnologias sociais](/social-technologies/)
-
-Notícias
-
-[Meta for Developers](https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Blog](/blog/)
-
-[Casos de sucesso](/success-stories/)
-
-Suporte
-
-[Suporte ao desenvolvedor](/support/)
-
-[Ferramenta de bug](/support/bugs/)
-
-[Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Fórum da Comunidade de Desenvolvedores](https://www.facebook.com/groups/fbdevelopers/)
-
-[Relatar um incidente](/incident/report/)
-
-Quem somos
-
-[Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT2586sv9ep-_I1_v1HoQHUfoMXK7aJ6whoC2NY9wxLVKdHAOYD8ystwarCJ-8THfZPBfFl3grTbdUY8EBpA6rZLfn33v3ovpxUrQ6KG49CERsIt8-9KU62SyDw_MLBnhGVLHiTvvTWjT-D9OJNwJg)
-
-[Carreiras](https://www.facebook.com/careers)
-
-Termos e políticas
-
-[Iniciativas de plataforma responsável](/products/responsible-platform-initiatives/)
-
-[Termos da plataforma](/terms/dfc_platform_terms/)
-
-[Políticas do Desenvolvedor](/devpolicy/)
-
-[Política de Privacidade](https://www.facebook.com/about/privacy)
-
-[Cookies](https://www.facebook.com/help/cookies)
-
-Português (Brasil)

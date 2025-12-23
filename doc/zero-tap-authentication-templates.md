@@ -1,117 +1,11 @@
-![](https://facebook.com/security/hsts-pixel.gif)
-
-[![](/images/developer/m4d_logo_july_2024.svg)](/?no_redirect=1)
-
-[Documentos](/docs/)[Ferramentas](/tools/)[Suporte](/support/)[Entrar](https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fwhatsapp%2Fbusiness-management-api%2Fauthentication-templates%2Fzero-tap-authentication-templates%3Fnav_ref%3Dbiz_unified_f3_login_page_to_dfc&login_options%5B0%5D=FB&login_options%5B1%5D=SSO&app=436761779744620&is_work_accounts=1&config_ref=biz_login_tool_flavor_dfc)
-
-[Documentos](/docs/)[API de Nuvem do WhatsApp](/docs/whatsapp/cloud-api)[Modelos](/docs/whatsapp/business-management-api/message-templates)[Modelos de autenticação](/docs/whatsapp/business-management-api/authentication-templates)[Zero-Tap](/docs/whatsapp/business-management-api/authentication-templates/zero-tap-authentication-templates)
-
-[API de Nuvem do WhatsApp](/docs/whatsapp/cloud-api)
-
-* [Visão geral](/docs/whatsapp/cloud-api/overview)
-* [Começar](/docs/whatsapp/cloud-api/get-started)
-* [Mensagem](/docs/whatsapp/cloud-api/guides/send-messages)
-* [Modelos](/docs/whatsapp/business-management-api/message-templates)
-
-  + [Modelos de autenticação](/docs/whatsapp/business-management-api/authentication-templates)
-
-    - [Preenchimento automático com um toque](/docs/whatsapp/business-management-api/authentication-templates/autofill-button-authentication-templates)
-    - [Zero-Tap](/docs/whatsapp/business-management-api/authentication-templates/zero-tap-authentication-templates)
-    - [Copy Code](/docs/whatsapp/business-management-api/authentication-templates/copy-code-button-authentication-templates)
-    - [Authenticating Users](/docs/whatsapp/business-management-api/authentication-templates/authentication-best-practices)
-    - [Bulk management](/docs/whatsapp/business-management-api/authentication-templates/bulk-management)
-    - [Error Signals](/docs/whatsapp/business-management-api/authentication-templates/error-signals)
-    - [Template preview](/docs/whatsapp/business-management-api/authentication-templates/template-preview)
-  + [Marketing templates](/docs/whatsapp/business-management-api/message-templates/marketing-templates)
-  + [Utility templates](/docs/whatsapp/business-management-api/message-templates/utility-templates)
-  + [Componentes](/docs/whatsapp/business-management-api/message-templates/components)
-  + [Management](/docs/whatsapp/business-management-api/message-templates/template-management)
-  + [Quality](/docs/whatsapp/business-management-api/message-templates/template-quality)
-  + [Per-user marketing limits](/docs/whatsapp/business-management-api/message-templates/template-messaging-limits)
-  + [Pacing](/docs/whatsapp/business-management-api/message-templates/template-pacing)
-  + [Pausing](/docs/whatsapp/business-management-api/message-templates/template-pausing)
-  + [Review](/docs/whatsapp/business-management-api/template-review)
-  + [Languages](/docs/whatsapp/business-management-api/message-templates/supported-languages)
-  + [Library](/docs/whatsapp/cloud-api/guides/send-message-templates/template-library)
-  + [Comparison](/docs/whatsapp/business-management-api/message-templates/template-comparison)
-  + [Migração de modelo](/docs/whatsapp/business-management-api/message-templates/template-migration)
-  + [Groups](/docs/whatsapp/business-management-api/message-templates/template-groups)
-  + [Tap target title URL override](/docs/whatsapp/cloud-api/guides/send-message-templates/tap-target-url-title-override)
-  + [Time-to-live](/docs/whatsapp/business-management-api/time-to-live)
-* [Webhooks](/docs/whatsapp/cloud-api/guides/set-up-webhooks)
-* [Calling](/docs/whatsapp/cloud-api/calling)
-* [Grupos](/docs/whatsapp/cloud-api/groups)
-* [Bloquear usuários](/docs/whatsapp/cloud-api/block-users)
-* [Números de telefone](/docs/whatsapp/cloud-api/phone-numbers)
-* [Vender produtos e serviços](/docs/whatsapp/cloud-api/guides/sell-products-and-services)
-* [Payments API - India](/docs/whatsapp/cloud-api/payments-api/payments-in)
-* [API de Pagamentos – Brasil](/docs/whatsapp/cloud-api/payments-api/payments-br)
-* [Referência da API](/docs/whatsapp/cloud-api/reference)
-* [Webhooks reference](/docs/whatsapp/webhooks/reference)
-* [Suporte](/docs/whatsapp/cloud-api/support)
-
-Nesta Página
-
-[Zero-tap authentication templates](#zero-tap-authentication-templates)
-
-[Limitations](#limitations)
-
-[Best practices](#best-practices)
-
-[Creating authentication templates](#creating-authentication-templates)
-
-[Request Syntax](#request-syntax)
-
-[Request parameters](#request-parameters)
-
-[Example request](#example-request)
-
-[Example response](#example-response)
-
-[App signing key hash](#app-signing-key-hash)
-
-[Supported apps](#supported-apps)
-
-[Handshake](#handshake)
-
-[Eligibility Check](#eligibility-check)
-
-[Android notifications](#android-notifications)
-
-[Using the SDK (Beta)](#using-the-sdk--beta-)
-
-[Zero-tap broadcast receiver](#zero-tap-broadcast-receiver)
-
-[Zero-tap receiver class](#zero-tap-receiver-class)
-
-[One-tap autofill button activity (optional)](#one-tap-autofill-button-activity--optional-)
-
-[One-tap autofill button activity class (optional)](#one-tap-autofill-button-activity-class--optional-)
-
-[Initiating the handshake](#initiating-the-handshake)
-
-[Checking if WhatsApp is installed](#checking-if-whatsapp-is-installed)
-
-[Error signals](#error-signals)
-
-[Sending authentication templates](#sending-authentication-templates)
-
-[Request](#request)
-
-[Request syntax](#request-syntax-2)
-
-[Request parameters](#request-parameters-2)
-
-[Response](#response)
-
-[Response Parameters](#response-parameters)
-
-[Example Request](#example-request-2)
-
-[Example Response](#example-response-2)
-
-![](https://lookaside.fbsbx.com/elementpath/media/?media_id=595945097590761&version=1760739785&transcode_extension=webp)[Plataforma do WhatsApp Business](https://developers.facebook.com/docs/whatsapp)
-
++++
+id = "zero-tap-authentication-templates"
+title = "Zero-tap authentication templates"
+summary = "Zero-tap authentication templates allow your users to receive one-time passwords or codes via WhatsApp without having to leave your app."
+source = "https://developers.facebook.com/docs/whatsapp/zero-tap-authentication-templates"
+lang = "en"
+tags = ["whatsapp-business-platform", "templates", "authentication", "rate-limits", "tools"]
++++
 # Zero-tap authentication templates
 
 Zero-tap authentication templates allow your users to receive one-time passwords or codes via WhatsApp without having to leave your app.
@@ -138,8 +32,6 @@ URLs, media, and emojis are not supported.
 * After the password/code is used in your app, make it clear to your app user that it was received successfully.
 
 Here are some examples that make it clear to an app user that their code will automatically appear in the app.
-
-![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/391694662_849209140220804_774216131431245181_n.png?stp=dst-webp&_nc_cat=109&ccb=1-7&_nc_sid=e280be&_nc_ohc=wGhGE4XaUnEQ7kNvwFe0EFP&_nc_oc=AdmNWXX6NBPXsXAWdLU7J94gUHdEAn7r_PcWJIbxVnnfk1Q5AJEFN0jidiIOnlScSFQ&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_AfjTN4V-giof6KwJjYzMCmBIYaVICKyrIW-3CXC69VBS7A&oe=6940686A)
 
 ## Creating authentication templates
 
@@ -346,9 +238,9 @@ To access SDK functionality, add the following configuration to your Gradle file
 
 ```
 dependencies {
-    …
+    ...
     implementation 'com.whatsapp.otp:whatsapp-otp-android-sdk:0.1.0'
-    …
+    ...
 }
 ```
 
@@ -356,9 +248,9 @@ To your repositories, add `mavenCentral()`:
 
 ```
 repositories {
-    …
+    ...
     mavenCentral()
-    …
+    ...
 }
 ```
 
@@ -700,114 +592,3 @@ curl -L 'https://graph.facebook.com/v24.0/105954558954427/messages' \
   ]
 }
 ```
-
-![](https://www.facebook.com/tr?id=675141479195042&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=574561515946252&ev=PageView&noscript=1)![](https://www.facebook.com/tr?id=1754628768090156&ev=PageView&noscript=1)
-
-Nesta Página
-
-[Zero-tap authentication templates](#zero-tap-authentication-templates)
-
-[Limitations](#limitations)
-
-[Best practices](#best-practices)
-
-[Creating authentication templates](#creating-authentication-templates)
-
-[Request Syntax](#request-syntax)
-
-[Request parameters](#request-parameters)
-
-[Example request](#example-request)
-
-[Example response](#example-response)
-
-[App signing key hash](#app-signing-key-hash)
-
-[Supported apps](#supported-apps)
-
-[Handshake](#handshake)
-
-[Eligibility Check](#eligibility-check)
-
-[Android notifications](#android-notifications)
-
-[Using the SDK (Beta)](#using-the-sdk--beta-)
-
-[Zero-tap broadcast receiver](#zero-tap-broadcast-receiver)
-
-[Zero-tap receiver class](#zero-tap-receiver-class)
-
-[One-tap autofill button activity (optional)](#one-tap-autofill-button-activity--optional-)
-
-[One-tap autofill button activity class (optional)](#one-tap-autofill-button-activity-class--optional-)
-
-[Initiating the handshake](#initiating-the-handshake)
-
-[Checking if WhatsApp is installed](#checking-if-whatsapp-is-installed)
-
-[Error signals](#error-signals)
-
-[Sending authentication templates](#sending-authentication-templates)
-
-[Request](#request)
-
-[Request syntax](#request-syntax-2)
-
-[Request parameters](#request-parameters-2)
-
-[Response](#response)
-
-[Response Parameters](#response-parameters)
-
-[Example Request](#example-request-2)
-
-[Example Response](#example-response-2)
-
----
-
-![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459257729_1010347667767763_3581566724399163588_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=8mhMcpIjeBkQ7kNvwHkP4-q&_nc_oc=AdlO3ZH_Jvl4nkiSl_NzPx_bZU9wlyyiBqGM7BftG4BZ-zyDTiz3IYeP9jzwyRa3MBM&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_AfhZm6nj0W53QXqJj7PdF5IlNvDAh2jQuedcX7xctokrKg&oe=6940632C)
-
-* [![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459306853_1501629487899251_7449019458089488547_n.png?stp=dst-webp&_nc_cat=107&ccb=1-7&_nc_sid=e280be&_nc_ohc=G9HoN6clJj0Q7kNvwHW8YOK&_nc_oc=Adl4qqjs2GQ_KCtPcQK5nkyFNKGk2VG_MDKDqJajF6afEsyVXYrgEfPJ8sL7u2Owi3A&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_AfiqrNheWoql4iHiq_8Ue5LrKZG3SUL4Ea0n6TRMw5TaFw&oe=694046E2)](https://www.facebook.com/MetaforDevelopers)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/458971466_433154499741175_6962021715663093697_n.png?stp=dst-webp&_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=Da_uV3THaUoQ7kNvwF1AAec&_nc_oc=Adms3y4JCEspj3ygUkhiNGbJFZR-oETEUXNTHEA9PBzDGOQ3eeaqgNfhJGrdKa1ekJ8&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_Afh3n2K98l-M7QEsCPmSOcTYoi7KE1JknK2W_thNXpTuEw&oe=6940434E)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT2Kd89i4e5n5vVpTJ3SbUfOrfoOxOokRqfQwjb0_xwRsaKp38t9A7T6pfNFQfaYhvbaQWpsg-DZbj2G08htXKF3eD4xNPR39-ROHltHpqmAaL55UqKvEvqWm6MRoRFnI6aYRv6LGLhhaB-rX9zLmQ)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459160202_540178488525397_747089945616031028_n.png?stp=dst-webp&_nc_cat=104&ccb=1-7&_nc_sid=e280be&_nc_ohc=xMk3wRUIgeUQ7kNvwHqMDKx&_nc_oc=Adl6-yLpj-oA8nZLGCMRbDVjAOlD1TSf8Z_sncBFZKdi6sBbLBmhs0PA0e_ZoKfMA6g&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_AfhIya2xeXLej95Fp1P22Jw6spv1SyWCVHQ3XSJ3SEngJQ&oe=69406A98)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT2Rm3amI4ggt0rfwcCtuXz6hjFsIWTsvjO55m4ctnPYbqGF2v0Pt20XpS2jEj4hODM0bPudsPTZovAyTFx3_Fqn1yO7cyr3KMbHLZQpZuCWgM2oJFxr4HAHIOiCKHNN8FjgDhmRmWnnHRxOUXh4mw)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/458754681_1046279956748647_3773356972584952025_n.png?stp=dst-webp&_nc_cat=103&ccb=1-7&_nc_sid=e280be&_nc_ohc=g67ScHV0LcEQ7kNvwFE9SaD&_nc_oc=Adnm_fQarb-P9HecEp4ZJiFoXCpivyxrjjzjL9w5N3VW0FuM2Xg2me3lqs_ug_ob2Ns&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_AfgP6jxQeWgslumlqTAXVBfwHCJPMBCPW0GbjoEm0vfLVA&oe=694048AC)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT2IByr1wjn-5S8nT9_-n0EGbUT_ozgkZyagKAjCdP_tJSzighedA2BrevqIhT1lPyhHCkc0IfIxT6aCOATQphUwI1pKCbhk-YVDsFGuuwdxQ1cEAw4Rrno5Ow4UuUO6Gb0SFi5D8JQCmVAabZp1Dg)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/459342489_501198322668453_7712071717227028092_n.png?stp=dst-webp&_nc_cat=109&ccb=1-7&_nc_sid=e280be&_nc_ohc=PKQzoyB_GWYQ7kNvwHuQ3Qo&_nc_oc=AdlZ6PusCJjK-MqVyMbegbP9cF2-JParHbS_7SO6tVR_zRZ9As7h2c-aarjHrSmHSyM&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_Afhzo6MU4hHD0p-0JwaOwuhK--POpMDZiMjufPVLa89iew&oe=69406E30)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT2298pJlDk81wMwWCe7nR6i7pFx9zcHJNpD3i40xatSB9GUVjHJ1_30yhJK4rdCDkt-eIHByHjTEgGQG2QfDDTld7q-yd72oPRFF5AC6h7Yimh2GWy7Bn-rao0SpTzq-J3VR9wnIq-hlTm74XI5QA)
-
-#### Desenvolva com a Meta
-
-* [IA](https://developers.meta.com/ai/)
-* [Meta Horizon OS](https://developers.meta.com/horizon/)
-* [Tecnologias sociais](/social-technologies/)
-* [Dispositivos vestíveis](https://l.facebook.com/l.php?u=https%3A%2F%2Fdeveloper.meta.com%2Fwearables%2F&h=AT0h4PBDF_IaDVUuiVznfjRAIX9Iw8zsebqd8A_xUR8OR7wcDCyoBma_G4xSckEILhiQ5KtSorGmB2GwH7VEeqRyEI8h1hxy_oaaOnKAT0I0DITKg0hXAh5T--dRRcrIJNX2V-ErHoCWW4bTwGrp3Q)
-
-#### Notícias
-
-* [Meta for Developers](https://developers.meta.com/blog/)
-* [Blog](/blog/)
-* [Casos de sucesso](/success-stories/)
-
-#### Suporte
-
-* [Suporte ao desenvolvedor](/support/)
-* [Ferramenta de bug](/support/bugs/)
-* [Status da plataforma](https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AT2PMDdTUVfhL9aob23UG2O4jzXZnAE228mu7wKWLyhaRYBm3NJPsafkJYVimcIthP0fde8ZQ2qhp1DvHFs58XAPbYrabZpoykCC8NYbVsGCzuANbGpX6HOugyvvRhoqwtLhsUMJcWiHRlqldc2r3w)
-* [Fórum da comunidade de desenvolvedores![](https://static.xx.fbcdn.net/rsrc.php/v4/yE/r/3AaI47RuuWt.png)](https://www.facebook.com/groups/fbdevelopers/)
-* [Relatar um incidente](/incident/report/)
-
-#### Termos e políticas
-
-* [Iniciativas da plataforma responsável](/products/responsible-platform-initiatives/)
-* [Termos da plataforma](/terms/)
-* [Políticas do Desenvolvedor](/devpolicy/)
-
-Siga-nos
-
-* [![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89126182_222315695571651_4936319991919149056_n.svg?_nc_cat=109&ccb=1-7&_nc_sid=e280be&_nc_ohc=jVaAdZR-cusQ7kNvwEcegmJ&_nc_oc=AdmiBraDOmtoE9jJ7N1ARcKhu2zRcVQhE-puYTPRNJUsLeThg-dmKW4EvjEgnWRXg-I&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_AfhZcKSy-2Bs9beBfPQ6sGnFyT9cDxikH7LgKtDvkhGttA&oe=694042EF)](https://www.facebook.com/MetaforDevelopers)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89319900_506382610280628_2520212398984396800_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=866JCMN-YaAQ7kNvwGu2k-u&_nc_oc=AdnMSFXUTR6BKYOcgLBvfLhyyP4wTHaIBI7IncOuiCIKefiCT_DMS4-PSL-g0qU_7mg&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_AfjtqUHxaro0O8m9bUxlKVn_CHHTFs9hdHwIljyK3mOT1Q&oe=69404E75)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AT3_tSQinDmi1cL6uXeHlOdizc5BVf9cAdVTcCDOGZLGwDQwIV16HWWG8-OYaBsH4-Eqypznv3WQUOcBWMTaXh51tElOZ-UFh7Wq7W6JqPtZqEcwkhzvfcI0fhhF0is7pSsy7zOtZPh9D7a5jR84gA)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89154638_493934268150363_1123534170136510464_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=lAaTViSW3NMQ7kNvwFiDJyV&_nc_oc=AdkLWyM25HuFV6d_EdW-d15rekQ2Q0oWryVvfbpvP23K-D9qm0gIk6PzRhQiM9M49zY&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_AfgDUeo71xwt5jvGeO5PJQKD2_r_5GC-zhuvI6s5h-tUYA&oe=69406085)](https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AT2XNs6oj3SFf7sRG6nq0kpx__5Bx9Rxlp61YMWjMhnvwFrgT2UkTVayInKYoFDabw4PgMxa1O58yuRo2fg_MpUNSziH-onXh6J23EgQvTodLT2sW1HNsg5II7yt3S2r9CeQMaOctEa7RN5-JNQ9dA)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89354779_640044533453459_7031092369583767552_n.svg?_nc_cat=108&ccb=1-7&_nc_sid=e280be&_nc_ohc=YUHZv44W0BEQ7kNvwFsVK8a&_nc_oc=Admq0MiSpCD5BDCCMx7O3kdwvKMKzt4EaBIwfdVwAz6xt3mzqaiSvec83zvkwiZtn-k&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_Afg8L__DPzr4K9JL5KU3K130M7u_P3pZZvbqpJcRWsUBrQ&oe=694051C6)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AT0g0x5qnhyZSsj8aLLSCArllJafB0el7ghDVRb5eg_RUlGrkk29zjUIX5UejfG15ekrCfd0Ne-U9gt5Tiiw3c4Y6vWtd8cw72lmep4jyQ5bY8EtSoBmjZwWs5UIlr8mRW_7y4qARfRIRrbmWTHIEg)[![](https://scontent.fpll10-1.fna.fbcdn.net/v/t39.2365-6/89127358_532616317687233_292625476315250688_n.svg?_nc_cat=111&ccb=1-7&_nc_sid=e280be&_nc_ohc=4eJmFx9fWJ0Q7kNvwET74gM&_nc_oc=Adn0VQn8zlM0qhkzEPsvh53FbUilR4Q1JZVrngx32iPmDOad4dTZI7h1ycnyqRss36A&_nc_zt=14&_nc_ht=scontent.fpll10-1.fna&_nc_gid=TxFm8-305-tPZfUdlxvL-A&oh=00_AfgRY1dEYnzK8eKqeIC__Zb-ZO8d6KJfia_FInnDuaJq5w&oe=694071D4)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AT0VVNL-jCoQe1nPAc7vbOXkE9JsqILPyo-UqSqrq666NSRpXCnAkuQpKCJaOYbZMQ_nDcfyZkBKZ-W1pg6vjTrY6UutmIyM49a_JMqQ0tupOzAgGlwPVRd5KcTO5u0t5P0XGlPzCA5aVRakIiprwg)
-
-© 2025 Meta
-
-* [Sobre](https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AT1-dxiS_Sl1NLOXk0m92Vtj3wLZXSIbR2MVSfGW_2bp1kQymur4hvoqCGdrDaqSShOEbbowR_5EI04NjyClO0d41pdJ2VL2JpRrrt1A-Vzhmt_2tdLc6NmzF4eiAdvKVAXU5-XA6OD8x_o0F8kxhw)
-* [Carreiras](https://www.facebook.com/careers)
-* [Política de Privacidade](https://www.facebook.com/about/privacy)
-* [Cookies](https://www.facebook.com/help/cookies)
-* [Termos](https://www.facebook.com/policies)
-
-Português (Brasil)Bahasa IndonesiaDeutschEnglish (US)EspañolEspañol (España)Français (France)ItalianoTiếng ViệtРусскийالعربيةภาษาไทย한국어中文(香港)中文(台灣)中文(简体)日本語
-
-Português (Brasil)
