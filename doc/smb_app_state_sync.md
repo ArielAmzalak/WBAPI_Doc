@@ -1,7 +1,7 @@
 +++
 id = "smb_app_state_sync"
 title = "`smb_app_state_sync` webhook reference"
-summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account smb\\app\\state\\_sync webhook."
+summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account smb\\_app\\_state\\_sync webhook."
 source = "https://developers.facebook.com/docs/whatsapp/smb_app_state_sync"
 lang = "en"
 tags = ["whatsapp-business-platform", "webhooks"]

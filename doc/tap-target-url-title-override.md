@@ -1,7 +1,7 @@
 +++
 id = "tap-target-url-title-override"
 title = "Tap target title URL override"
-summary = "This document explains how to send approved message templates using the taptargetconfiguration component within a template message."
+summary = "This document explains how to send approved message templates using the tap_target_configuration component within a template message."
 source = "https://developers.facebook.com/docs/whatsapp/tap-target-url-title-override"
 lang = "en"
 tags = ["whatsapp-business-platform"]

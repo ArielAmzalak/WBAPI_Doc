@@ -1,7 +1,7 @@
 +++
 id = "account_review_update"
 title = "`account_review_update` webhook reference"
-summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account accountreviewupdate webhook."
+summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account account_review_update webhook."
 source = "https://developers.facebook.com/docs/whatsapp/account_review_update"
 lang = "en"
 tags = ["whatsapp-business-platform", "webhooks"]

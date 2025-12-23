@@ -1,7 +1,7 @@
 +++
 id = "phone_number_quality_update"
 title = "`phone_number_quality_update` webhook reference"
-summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account phone\\number\\quality\\_update webhook."
+summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account phone\\_number\\_quality\\_update webhook."
 source = "https://developers.facebook.com/docs/whatsapp/phone_number_quality_update"
 lang = "en"
 tags = ["whatsapp-business-platform", "webhooks", "phone-numbers"]

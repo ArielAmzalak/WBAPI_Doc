@@ -1,7 +1,7 @@
 +++
 id = "payment_configuration_update"
 title = "`payment_configuration_update` webhook reference"
-summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account payment\\configuration\\update webhook."
+summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account payment\\_configuration\\_update webhook."
 source = "https://developers.facebook.com/docs/whatsapp/payment_configuration_update"
 lang = "en"
 tags = ["whatsapp-business-platform", "webhooks"]

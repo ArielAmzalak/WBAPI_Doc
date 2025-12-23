@@ -1,7 +1,7 @@
 +++
 id = "bulk-management"
 title = "Bulk management"
-summary = "Use the POST /<WABA\\ID>/upsert\\message\\_templates endpoint to bulk update or create authentication templates in multiple languages that include or exclude the optional security and expiration warni..."
+summary = "Use the POST /<WABA\\_ID>/upsert\\_message\\_templates endpoint to bulk update or create authentication templates in multiple languages that include or exclude the optional security and expiration war..."
 source = "https://developers.facebook.com/docs/whatsapp/bulk-management"
 lang = "en"
 tags = ["whatsapp-business-platform"]

@@ -1,7 +1,7 @@
 +++
 id = "template-preview"
 title = "Template previews"
-summary = "You can generate previews of authentication template text in various languages that include or exclude the security recommendation string and code expiration string using the GET /<WABA\\ID>/message..."
+summary = "You can generate previews of authentication template text in various languages that include or exclude the security recommendation string and code expiration string using the GET /<WABA\\_ID>/messag..."
 source = "https://developers.facebook.com/docs/whatsapp/template-preview"
 lang = "en"
 tags = ["whatsapp-business-platform", "templates"]

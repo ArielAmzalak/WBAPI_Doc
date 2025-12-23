@@ -1,7 +1,7 @@
 +++
 id = "template_category_update"
 title = "`template_category_update` webhook reference"
-summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account template\\category\\update webhook."
+summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account template\\_category\\_update webhook."
 source = "https://developers.facebook.com/docs/whatsapp/template_category_update"
 lang = "en"
 tags = ["whatsapp-business-platform", "webhooks", "templates"]

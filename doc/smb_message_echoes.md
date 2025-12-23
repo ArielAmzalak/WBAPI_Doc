@@ -1,7 +1,7 @@
 +++
 id = "smb_message_echoes"
 title = "`smb_message_echoes` webhook reference"
-summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account smb\\message\\echoes webhook."
+summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account smb\\_message\\_echoes webhook."
 source = "https://developers.facebook.com/docs/whatsapp/smb_message_echoes"
 lang = "en"
 tags = ["whatsapp-business-platform", "webhooks", "messaging"]

@@ -1,7 +1,7 @@
 +++
 id = "orders"
 title = "Orders"
-summary = "Payments API introduces two new types of interactive messages: orderdetails and orderstatus. They are the entrypoint to collect payment in WhatsApp."
+summary = "Payments API introduces two new types of interactive messages: order_details and order_status. They are the entrypoint to collect payment in WhatsApp."
 source = "https://developers.facebook.com/docs/whatsapp/orders"
 lang = "en"
 tags = ["whatsapp-business-platform", "messaging"]

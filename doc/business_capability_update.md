@@ -1,7 +1,7 @@
 +++
 id = "business_capability_update"
 title = "`business_capability_update` webhook reference"
-summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account business\\capability\\update webhook."
+summary = "This reference describes trigger events and payload contents for the WhatsApp Business Account business\\_capability\\_update webhook."
 source = "https://developers.facebook.com/docs/whatsapp/business_capability_update"
 lang = "en"
 tags = ["whatsapp-business-platform", "webhooks"]
